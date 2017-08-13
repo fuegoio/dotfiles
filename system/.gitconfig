@@ -1,0 +1,7 @@
+[user]
+	email = alexistacnet@gmail.com
+	name = Alexis Tacnet
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=3600

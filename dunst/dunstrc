@@ -1,0 +1,55 @@
+[global]
+    font = "Droid Sans 8"
+    allow_markup = yes
+    format = "<b>%s</b>\n%b"
+    sort = yes
+    indicate_hidden = yes
+    alignment = center
+    bounce_freq = 0
+    show_age_threshold = 60
+    word_wrap = yes
+    ignore_newline = no
+    geometry = "250x60-50+40"
+    transparency = 0
+    idle_threshold = 120
+    monitor = 0
+    follow = none
+    sticky_history = yes
+    line_height = 0
+    separator_height = 2
+    padding = 8
+    horizontal_padding = 8
+    icon_position = left 
+    icon_folders = /usr/share/icons/Arc/status/16/:/usr/share/icons/Arc/devices/16/:/usr/share/icons/Moka/16x16/apps
+    max_icon_size = 64 
+    separator_color = "#527fc1"
+    startup_notification = false
+
+[frame]
+    width = 1
+    color = "#383838"
+
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    history = ctrl+grave
+    context = ctrl+shift+period
+
+[urgency_low]
+    background = "#282a36"
+    foreground = "#f9f9f9"
+    timeout = 5
+
+[urgency_normal]
+    background = "#282a36"
+    foreground = "#87a5d2"
+    timeout = 20
+
+[urgency_critical]
+    background = "#282a36"
+    foreground = "#ef6165"
+    timeout = 0
+
+[spotify]
+    appname = *Spotify*
+    new_icon = spotify-client

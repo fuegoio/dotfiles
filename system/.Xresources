@@ -1,0 +1,49 @@
+#include </home/fuego/.termcolors/kodewolf>
+
+Xft.dpi:                        109
+URxvt*termName:                 xterm-256color
+URxvt*font:                     xft:Menlo:pixelsize=12,xft:Fira\ Mono\ for\ Powerline:pixelsize=12
+URxvt.depth:                    32
+URxvt*lineSpace:                1
+URxvt.letterSpace:              -1
+URxvt.iso14755:                 false
+URxvt.iso14755_52:              false
+URxvt*geometry:                 65x17
+URxvt.scrollBar:                false
+URxvt*loginShell:               true
+URxvt.internalBorder:           35
+URxvt.clipboard.autocopy:       true
+
+!URxvt.transparent:              true
+!URxvt.shading:                  5
+
+! Colors
+*background:   black
+*foreground:   white
+*cursorColor:  value
+
+*color0:      black
+*color8:      global 
+*color1:      statement
+*color9:      statement
+*color2:      identifier
+*color10:     identifier 
+*color3:      action_accent
+*color11:     action
+*color4:      value_accent
+*color12:     identifier 
+*color5:      value
+*color13:     value 
+*color6:      identifier_accent
+*color14:     type 
+*color7:      global 
+*color15:     white
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: black, black, trivial_accent
+rofi.color-normal: black, value, black, value, black
+rofi.color-active: black, value, black, grey1, value
+rofi.color-urgent: black, statement, black, grey1, statement
