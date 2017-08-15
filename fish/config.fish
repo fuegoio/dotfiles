@@ -33,6 +33,7 @@ function fish_prompt
   set -l last_status $status
   set -l red (set_color -o red)
   set -l blue (set_color -o blue)
+  set -l lightb (set_color -o magenta)
   set -l yellow (set_color -o yellow)
   set -l normal (set_color normal)
 
@@ -41,7 +42,7 @@ function fish_prompt
   else
       set status_indicator "$red✗ "
   end
-  set -l host $red(hostname)
+  set -l host $lightb(hostname)
   set -l cwd $blue(basename (prompt_pwd))
 
   if [ (_git_branch_name) ]
