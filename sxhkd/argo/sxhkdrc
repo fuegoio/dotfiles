@@ -23,7 +23,7 @@ super + Return
 
 # program launcher
 super + space
-    rofi -fake-transparency -opacity 90 -show run
+    rofi -fake-transparency -opacity 80 -fullscreen -show run
 
 ctrl + alt + Escape
     scrot -s
@@ -33,7 +33,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 super + e ; {f,e,t,m,s}
-	{firefox,pcmanfm,thunderbird,spotify,subl}
+	{firefox-nightly,pcmanfm,thunderbird,spotify,subl}
 
 super + i 
 	dm-tool lock
