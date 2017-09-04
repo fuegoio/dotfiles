@@ -41,6 +41,7 @@ bspc rule -a keepassxc state=floating center=true
 
 sxhkd &
 dunst &
+xsetroot -cursor_name left_ptr &
 feh --bg-scale ~/Pictures/wallpaper.jpg &
 $HOME/.config/polybar/start.sh &
 compton --config "$HOME/.config/compton/compton.conf" -b &
