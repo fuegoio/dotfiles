@@ -39,9 +39,11 @@ bspc rule -a Spotify desktop=^8 follow=on
 bspc rule -a Chromium-browser desktop=^4 follow=on
 bspc rule -a keepassxc state=floating center=true
 
+exsetroot -cursor_name left_ptr
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 sxhkd &
 dunst &
-xsetroot -cursor_name left_ptr &
 feh --bg-scale ~/Pictures/wallpaper.jpg &
 $HOME/.config/polybar/start.sh &
 compton --config "$HOME/.config/compton/compton.conf" -b &
