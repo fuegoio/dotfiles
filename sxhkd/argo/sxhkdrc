@@ -36,7 +36,7 @@ super + e ; {f,e,t,m,s}
 	{firefox-nightly,pcmanfm,thunderbird,spotify,subl}
 
 super + i 
-	dm-tool lock
+	i3lock-fancy -- scrot -z	
 
 #
 # bspwm hotkeys
