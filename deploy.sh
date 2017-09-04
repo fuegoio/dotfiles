@@ -48,10 +48,10 @@ ln -s $(pwd)/pycharm/Material\ Theme\ -\ Kodewolf.icls ~/.PyCharm2017.2/config/c
 # Sudo part
 
 sudo rm -f /etc/sddm.conf
-sudo ln -s $(pwd)/sddm/sddm.conf /etc/sddm.conf
+sudo cp $(pwd)/sddm/sddm.conf /etc/sddm.conf
 
 sudo rm -rf /usr/share/sddm/themes/clairvoyance
-sudo ln -s $(pwd)/sddm/clairvoyance /usr/share/sddm/themes/clairvoyance
+sudo cp -r $(pwd)/sddm/clairvoyance /usr/share/sddm/themes/clairvoyance
 
 sudo rm -f /etc/vconsole.conf
 sudo ln -s $(pwd)/system/vconsole.conf /etc/vconsole.conf
