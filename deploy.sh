@@ -45,5 +45,20 @@ ln -s $(pwd)/sublime_text/Preferences.sublime-settings ~/.config/sublime-text-3/
 rm -f ~/.PyCharm2017.2/config/colors/Material\ Theme\ -\ Kodewolf.icls
 ln -s $(pwd)/pycharm/Material\ Theme\ -\ Kodewolf.icls ~/.PyCharm2017.2/config/colors/Material\ Theme\ -\ Kodewolf.icls
 
-rm -f ~/.vimrc
-ln -s $(pwd)/vim/.vimrc ~/.vimrc
+# Sudo part
+
+sudo rm -f /etc/sddm.conf
+sudo ln -s $(pwd)/sddm/sddm.conf /etc/sddm.conf
+
+sudo rm -rf /usr/share/sddm/themes/clairvoyance
+sudo ln -s $(pwd)/sddm/clairvoyance /usr/share/sddm/themes/clairvoyance
+
+sudo rm -f /etc/vconsole.conf
+sudo ln -s $(pwd)/system/vconsole.conf /etc/vconsole.conf
+
+sudo rm -f /etc/plymouth/plymouthd.conf
+sudo ln -s $(pwd)/plymouth/plymouthd.conf /etc/plymouth/plymouthd.conf
+
+sudo rm -f /etc/mkinitcpio.conf
+sudo ln -s $(pwd)/system/mkinitcpio.conf /etc/mkinitcpio.conf
+sudo mkinitcpio -p linux
