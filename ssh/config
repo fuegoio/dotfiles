@@ -3,4 +3,4 @@ Host *
   IdentityFile ~/.ssh/id_rsa
 
 Host atlas
-  User osmc
+  User pi 

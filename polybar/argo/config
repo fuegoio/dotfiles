@@ -4,12 +4,14 @@ height = 30
 
 background = #00000000
 foreground = #f9f9f9
-linecolor = ${bar/bottom.background}
 
 spacing = 4
 padding-right = 5
 module-margin-left = 3
 module-margin-right = 3
+
+line-size = 2 
+line-color = #55 
 
 tray-position = right
 
@@ -25,7 +27,7 @@ modules-center = date
 modules-right = vpn wireless-network battery
 
 [bar/external_top]
-monitor = DP1
+monitor = eDP1
 width = 100%
 height = 30
 
@@ -132,11 +134,10 @@ pin-workspaces = true
 
 format = <label-state> <label-mode>
 
-label-dimmed-underline = ${root.background}
-
 label-focused = %icon%
 label-focused-foreground = #f9f9f9
-label-focused-background = #3c527fc1
+label-focused-background = #00527fc1
+label-focused-overline = #D3DAE3
 label-focused-font = 4
 label-focused-padding = 4
 
