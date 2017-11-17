@@ -1,5 +1,3 @@
-alias toucan "cd Projects/Main/CybelAngel/toucan-project/toucan/"
-
 abbr go="git checkout"
 abbr gs="git status"
 abbr gcm="git commit -m"

@@ -1,6 +1,7 @@
 #include </home/fuego/.termcolors/kodewolf>
 
-Xft.dpi:                        109
+Xft.dpi:                        96
+Xcursor.size: 			16 
 URxvt*termName:                 xterm-256color
 URxvt*font:                     xft:Menlo:pixelsize=12,xft:Fira\ Mono\ for\ Powerline:pixelsize=12
 URxvt.depth:                    32

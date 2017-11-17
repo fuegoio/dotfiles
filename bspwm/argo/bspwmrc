@@ -28,6 +28,8 @@ if xrandr | grep "$extern disconnected"; then
      bspc monitor $extern -r
 else
     mons -s
+    xset s off
+    xset s off -dpms
     bspc monitor $extern -n $extern -d term web code chrome other other mail music
     bspc monitor $intern -r 
 fi
