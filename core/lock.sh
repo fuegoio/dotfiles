@@ -8,10 +8,20 @@
 
 # Suspend dunst and lock, then resume dunst when unlocked.
 pkill -u $USER -USR1 dunst
-i3lock -n -i ~/Pictures/lock.png \
-    --insidecolor=373445ff --ringcolor=ffffffff --line-uses-inside \
-    --keyhlcolor=d23c3dff --bshlcolor=d23c3dff --separatorcolor=00000000 \
-    --insidevercolor=fecf4dff --insidewrongcolor=d23c3dff \
-    --ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+86:y+1003" \
-    --radius=15 --veriftext="" --wrongtext=""
+extern=HDMI1
+if xrandr | grep "$extern disconnected"; then
+	i3lock -n -i ~/Pictures/lock.png \
+    		--insidecolor=373445ff --ringcolor=ffffffff --line-uses-inside \
+    		--keyhlcolor=527fc1ff --bshlcolor=ff8e91ff --separatorcolor=00000000 \
+   		--insidevercolor=527fc1ff --insidewrongcolor=ff8e91ff \
+    		--ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+86:y+1003" \
+    		--radius=15 --veriftext="" --wrongtext=""
+else
+	i3lock -n -i ~/Pictures/lock.png \
+    		--insidecolor=373445ff --ringcolor=ffffffff --line-uses-inside \
+    		--keyhlcolor=527fc1ff --bshlcolor=ff8e91ff --separatorcolor=00000000 \
+   		--insidevercolor=527fc1ff --insidewrongcolor=ff8e91ff \
+   		--ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+86:y+1353" \
+    		--radius=15 --veriftext="" --wrongtext=""
+fi
 pkill -u $USER -USR2 dunst

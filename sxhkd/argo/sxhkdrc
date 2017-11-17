@@ -36,7 +36,7 @@ super + e ; {f,e,t,m,s,y}
 	{firefox-nightly,pcmanfm,thunderbird-nightly,spotify,subl,abricotine}
 
 super + i 
-	i3lock-fancy -- scrot -z	
+	~/.core/lock.sh	
 
 #
 # bspwm hotkeys
