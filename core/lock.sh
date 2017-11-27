@@ -11,14 +11,14 @@ pkill -u $USER -USR1 dunst
 extern=HDMI1
 if xrandr | grep "$extern disconnected"; then
 	i3lock -n -i ~/Pictures/lock.png \
-    		--insidecolor=373445ff --ringcolor=ffffffff --line-uses-inside \
+    		--insidecolor=37344500 --ringcolor=ffffffff --line-uses-inside \
     		--keyhlcolor=527fc1ff --bshlcolor=ff8e91ff --separatorcolor=00000000 \
    		--insidevercolor=527fc1ff --insidewrongcolor=ff8e91ff \
     		--ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+86:y+1003" \
     		--radius=15 --veriftext="" --wrongtext=""
 else
 	i3lock -n -i ~/Pictures/lock.png \
-    		--insidecolor=373445ff --ringcolor=ffffffff --line-uses-inside \
+    		--insidecolor=37344500 --ringcolor=ffffffff --line-uses-inside \
     		--keyhlcolor=527fc1ff --bshlcolor=ff8e91ff --separatorcolor=00000000 \
    		--insidevercolor=527fc1ff --insidewrongcolor=ff8e91ff \
    		--ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+86:y+1353" \

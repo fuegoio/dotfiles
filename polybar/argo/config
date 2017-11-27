@@ -79,7 +79,7 @@ modules-right = cpu memory
 
 [module/vpn]
 type = custom/script
-exec = /home/fuego/.core/vpn_status.py
+exec = ~/.core/vpn_status.py 
 
 [module/backlight]
 type = internal/xbacklight

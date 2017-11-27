@@ -44,4 +44,4 @@ dunst &
 feh --bg-scale ~/Pictures/wallpaper.jpg &
 $HOME/.config/polybar/start.sh &
 compton --config "$HOME/.config/compton/compton.conf" -b &
-redshift &
+redshift

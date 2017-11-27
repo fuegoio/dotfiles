@@ -8,6 +8,8 @@ abbr gm="git merge"
 abbr dk="docker"
 abbr dco="docker-compose"
 
+alias vpn="sudo bash -c  '/home/fuego/.core/ipsec.sh'"
+
 set -x EDITOR vim
 
 function spork
