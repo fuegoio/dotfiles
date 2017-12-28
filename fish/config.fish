@@ -11,6 +11,8 @@ abbr dco="docker-compose"
 alias vpn="sudo bash -c  '/home/fuego/.core/ipsec.sh'"
 
 set -x EDITOR vim
+set -x ANDROID_HOME "/home/fuego/Android/Sdk"
+set -gx PATH $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $PATH
 
 function spork
    knife spork bump $argv[1] $argv[3]

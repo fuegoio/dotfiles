@@ -55,7 +55,7 @@ width = 100%
 height = 20
 
 background = #00000000
-foreground = ${bar/top.foreground}
+foreground = #f9f9f9 
 linecolor = ${bar/top.background}
 
 spacing = 3
@@ -135,8 +135,8 @@ pin-workspaces = true
 format = <label-state> <label-mode>
 
 label-focused = %icon%
-label-focused-foreground = #f9f9f9
-label-focused-background = #00527fc1
+label-focused-foreground = #ffffff
+label-focused-background = #35ffffff
 label-focused-overline = #D3DAE3
 label-focused-font = 4
 label-focused-padding = 4
@@ -152,7 +152,7 @@ label-urgent-font = 4
 label-urgent-padding = 4
 
 label-empty = %icon%
-label-empty-foreground = #55
+label-empty-foreground = #92ffffff
 label-empty-font = 4
 label-empty-padding = 4
 
