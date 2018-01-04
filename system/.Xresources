@@ -19,7 +19,7 @@ URxvt.clipboard.autocopy:       true
 !URxvt.shading:                  5
 
 ! Colors
-*background:   black
+*background:   rgba:4000/4200/5400/f200 
 *foreground:   white
 *cursorColor:  value
 
@@ -29,14 +29,14 @@ URxvt.clipboard.autocopy:       true
 *color9:      statement
 *color2:      identifier
 *color10:     identifier 
-*color3:      action_accent
-*color11:     action
+*color3:      type 
+*color11:     type
 *color4:      value_accent
 *color12:     identifier 
 *color5:      value
 *color13:     value 
-*color6:      identifier_accent
-*color14:     type 
+*color6:      identifier
+*color14:     identifier 
 *color7:      global 
 *color15:     white
 
