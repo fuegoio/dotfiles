@@ -75,7 +75,7 @@ font-4 = MaterialIcons:size=10;-1
 font-5 = Termsynu:size=8;-1
 
 modules-left = backlight volume
-modules-right = cpu memory
+modules-right = cpu memory temperature
 
 [module/vpn]
 type = custom/script
@@ -266,12 +266,7 @@ ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-volume-3 = 
 
-[module/filesystem]
-type = internal/fs
-
-mount-0 = /
-mount-1 = /boot
-
-interval = 10
-fixed-values = true
-spacing = 4
+[module/temperature]
+type = internal/temperature
+interval = 1
+thermal-zone = 7
