@@ -8,11 +8,13 @@ abbr gm="git merge"
 abbr dk="docker"
 abbr dco="docker-compose"
 
-alias vpn="sudo bash -c  '/home/fuego/.core/ipsec.sh'"
+alias screens="/home/fuego/.core/screens.sh"
 
 set -x EDITOR vim
 set -x ANDROID_HOME "/home/fuego/Android/Sdk"
 set -gx PATH $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $PATH
+
+set -U fish_greeting "Welcome to argo. Go faire du sale."
 
 function spork
    knife spork bump $argv[1] $argv[3]

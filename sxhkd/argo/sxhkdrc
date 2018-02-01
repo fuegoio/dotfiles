@@ -80,10 +80,10 @@ super + {grave,Tab}
  
 # focus to the given desktop
 super + {_,alt + }{h,t,n,s}
-	bspc {desktop -f,node -d} '^{1,2,3,4}'
+	bspc {desktop -f,node -d} '{term,web,code,chrome}'
 
 super + {shift +,shift + alt + }{h,t,n,s}
-	bspc {desktop -f,node -d} '^{5,6,7,9}'
+	bspc {desktop -f,node -d} '{other1,other2,mail,^9}'
 
 #
 # preselect
