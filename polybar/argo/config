@@ -270,4 +270,4 @@ ramp-volume-3 = 
 [module/temperature]
 type = internal/temperature
 interval = 1
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
+hwmon-path = /sys/class/thermal/thermal_zone9/temp
