@@ -2,6 +2,8 @@
 
 Here are my dotfiles, with a `deploy.sh` script that creates a symlink between this repository and various location in the user's home.
 
+![screen](https://i.imgur.com/FR9qix1.png)
+
 > Be careful with the Pycharm theme, that may be broken if the version doesn't match
 
 ## Apps
@@ -39,7 +41,7 @@ Here is what I use for the visual :
 
 A lot of things has to be installed, from official repos or from AUR for example (or git), in order to be fully fonctionnal :
 
-* Font awesame
+* Font awesome
 * Material Icons
 * Meslo
 * Powerline fonts
