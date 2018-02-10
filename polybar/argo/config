@@ -81,7 +81,7 @@ modules-right = cpu memory temperature
 
 [module/vpn]
 type = custom/script
-exec = ~/.core/vpn_status.py 
+exec = ~/.core/vpn_status.sh
 
 [module/backlight]
 type = internal/xbacklight
