@@ -16,13 +16,6 @@ set -gx PATH $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $PATH
 
 set -U fish_greeting "Welcome to argo. Go faire du sale."
 
-function spork
-   knife spork bump $argv[1] $argv[3]
-   knife spork upload $argv[1]
-   knife spork promote $argv[2] $argv[1]
-   knife environment from file $argv[2].json
-end
-
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
 end
