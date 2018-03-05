@@ -3,7 +3,7 @@ monitor = ${env:MONITOR:}
 width = 100%
 height = 30
 
-background = #00000000
+background = #282a36
 foreground = #f9f9f9
 
 spacing = 4
@@ -32,7 +32,7 @@ monitor = eDP1
 width = 100%
 height = 30
 
-background = #00000000
+background = #282a36
 foreground = #f9f9f9
 linecolor = ${bar/bottom.background}
 
@@ -138,7 +138,7 @@ format = <label-state> <label-mode>
 
 label-focused = %icon%
 label-focused-foreground = #ffffff
-label-focused-background = #35ffffff
+label-focused-background = #4e5060
 label-focused-overline = #D3DAE3
 label-focused-font = 4
 label-focused-padding = 4
