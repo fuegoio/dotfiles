@@ -11,8 +11,8 @@ padding-right = 5
 module-margin-left = 3
 module-margin-right = 3
 
-line-size = 2 
-line-color = #55 
+line-size = 2
+line-color = #55ffffff
 
 tray-position = right
 
@@ -34,7 +34,6 @@ height = 30
 
 background = #282a36
 foreground = #f9f9f9
-linecolor = ${bar/bottom.background}
 
 pacing = 4
 padding-right = 5
@@ -54,11 +53,10 @@ modules-left = bspwm
 monitor = ${env:MONITOR:}
 bottom = true
 width = 100%
-height = 20
+height = 24
 
 background = #00000000
-foreground = #f9f9f9 
-linecolor = ${bar/top.background}
+foreground = #f9f9f9
 
 spacing = 3
 lineheight = 2
@@ -70,11 +68,9 @@ module-margin-right = 6
 wm-restack = bspwm
 
 font-0 = NotoSans-Regular:size=8;0
-font-1 = Unifont:size=6;-3
-font-2 = FontAwesome:size=8;-2
-font-3 = NotoSans-Regular:size=8;-1
-font-4 = MaterialIcons:size=10;-1
-font-5 = Termsynu:size=8;-1
+font-1 = MaterialIcons:size=10;0
+font-2 = Termsynu:size=8;-1
+font-3 = FontAwesome:size=8;-1
 
 modules-left = backlight volume
 modules-right = cpu memory temperature
