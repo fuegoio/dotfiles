@@ -9,7 +9,7 @@ abbr dk="docker"
 abbr dco="docker-compose"
 
 alias screens="/home/fuego/.core/screens.sh"
-alias vpnon="sudo systemctl start wg-quick@w0"
+alias vpnon="sudo systemctl start wg-quick@wg0"
 alias vpnoff="sudo systemctl stop wg-quick@wg0"
 
 set -x EDITOR vim
