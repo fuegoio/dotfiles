@@ -1,6 +1,6 @@
 [global]
     font = "Droid Sans 8"
-    allow_markup = yes
+    markup = yes
     format = "<b>%s</b>\n%b"
     sort = yes
     indicate_hidden = yes
@@ -20,14 +20,12 @@
     padding = 8
     horizontal_padding = 8
     icon_position = left 
-    icon_folders = /usr/share/icons/Arc/status/16/:/usr/share/icons/Arc/devices/16/:/usr/share/icons/Moka/16x16/apps
+    icon_path = /usr/share/icons/Arc/status/16/:/usr/share/icons/Arc/devices/16/
     max_icon_size = 64 
     separator_color = "#527fc1"
     startup_notification = false
-
-[frame]
-    width = 1
-    color = "#383838"
+    frame_width = 1
+    frame_color = "#383838"
 
 [shortcuts]
     close = ctrl+space
@@ -52,4 +50,3 @@
 
 [spotify]
     appname = *Spotify*
-    new_icon = spotify-client

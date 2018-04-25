@@ -15,6 +15,9 @@ ln -s $(pwd)/dunst ~/.config/dunst
 rm -rf ~/.config/fish
 ln -s $(pwd)/fish ~/.config/fish
 
+rm -rf ~/.themes
+ln -s $(pwd)/themes ~/.themes
+
 rm -rf ~/.config/gtk-3.0/settings.ini
 ln -s $(pwd)/gtk/settings.ini ~/.config/gtk-3.0/settings.ini
 
