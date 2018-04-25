@@ -39,15 +39,3 @@ URxvt.clipboard.autocopy:       true
 *color14:     identifier 
 *color7:      trivial 
 *color15:     white
-
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! ------------------------------------------------------------------------------
-rofi.font: Menlo 12
-rofi.color-enabled: true
-rofi.padding: 400
-rofi.separator-style: none
-rofi.color-window: black, black, trivial_accent
-rofi.color-normal: black, value, black, value, black
-rofi.color-active: black, value, black, grey1, value
-rofi.color-urgent: black, statement, black, grey1, statement

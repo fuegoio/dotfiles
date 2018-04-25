@@ -15,6 +15,9 @@ ln -s $(pwd)/dunst ~/.config/dunst
 rm -rf ~/.config/fish
 ln -s $(pwd)/fish ~/.config/fish
 
+rm -rf ~/.config/rofi
+ln -s $(pwd)/rofi ~/.config/rofi
+
 rm -rf ~/.themes
 ln -s $(pwd)/themes ~/.themes
 

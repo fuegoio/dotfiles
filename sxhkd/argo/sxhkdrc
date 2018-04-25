@@ -23,7 +23,7 @@ super + Return
 
 # program launcher
 super + space
-    rofi -fake-transparency -opacity 80 -fullscreen -show run
+    rofi -show run
 
 ctrl + alt + Escape
     scrot -s

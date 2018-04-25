@@ -18,10 +18,9 @@ tray-position = right
 
 wm-restack = bspwm
 
-font-0 = NotoSans-Regular:size=8;1
+font-0 = Lato:size=9;1
 font-1 = MaterialIcons:size=13;3
-font-2 = Termsynu:size=8;-1
-font-3 = FontAwesome:size=10;2
+font-2 = FontAwesome:size=10;2
 
 modules-left = bspwm 
 modules-center = date
@@ -42,10 +41,9 @@ module-margin-right = 3
 
 wm-restack = bspwm
 
-font-0 = NotoSans-Regular:size=8;1
+font-0 = Lato:size=9;1
 font-1 = MaterialIcons:size=13;3
-font-2 = Termsynu:size=8;-1
-font-3 = FontAwesome:size=10;2
+font-2 = FontAwesome:size=10;2
 
 modules-left = bspwm
 
@@ -67,9 +65,9 @@ module-margin-right = 6
 
 wm-restack = bspwm
 
-font-0 = NotoSans-Regular:size=8;0
+font-0 = Lato:size=9;-1
 font-1 = MaterialIcons:size=10;0
-font-2 = Termsynu:size=8;-1
+font-2 = Termsynu:size=8;0
 font-3 = FontAwesome:size=8;-1
 
 modules-left = backlight volume
@@ -104,9 +102,9 @@ bar-capacity-width = 10
 bar-capacity-format = %{+u}%{+o}%fill%%empty%%{-u}%{-o}
 bar-capacity-fill = █
 bar-capacity-fill-foreground = #ddffffff
-bar-capacity-fill-font = 3
+bar-capacity-fill-font = 2
 bar-capacity-empty = █
-bar-capacity-empty-font = 3
+bar-capacity-empty-font = 2
 bar-capacity-empty-foreground = #44ffffff
 
 animation-charging-0 = 
@@ -136,22 +134,22 @@ label-focused = %icon%
 label-focused-foreground = #ffffff
 label-focused-background = #4e5060
 label-focused-overline = #D3DAE3
-label-focused-font = 4
+label-focused-font = 3
 label-focused-padding = 4
 
 label-occupied = %icon%
 label-occupied-foreground = #f9f9f9
-label-occupied-font = 4
+label-occupied-font = 3
 label-occupied-padding = 4
 
 label-urgent = %icon%
 label-urgent-background = #ffac8d
-label-urgent-font = 4
+label-urgent-font = 3
 label-urgent-padding = 4
 
 label-empty = %icon%
 label-empty-foreground = #92ffffff
-label-empty-font = 4
+label-empty-font = 3
 label-empty-padding = 4
 
 label-monocle = 
@@ -227,12 +225,12 @@ bar-used-foreground-1 = #f9f9f9
 bar-used-foreground-2 = #ffb154
 bar-used-foreground-3 = #ef6165
 bar-used-indicator = |
-bar-used-indicator-font = 6
+bar-used-indicator-font = 2
 bar-used-indicator-foreground = #ff
 bar-used-fill = ─
-bar-used-fill-font = 6
+bar-used-fill-font = 2
 bar-used-empty = ─
-bar-used-empty-font = 6
+bar-used-empty-font = 2
 bar-used-empty-foreground = #444444
 
 [module/wireless-network]
