@@ -16,7 +16,7 @@
 
 .background {
   color: #D3DAE3;
-  background-color: rgba(56, 60, 74, 0.999); }
+  background-color: #282a36; }
 
 *:disabled {
   -gtk-icon-effect: dim; }
@@ -247,7 +247,7 @@ button {
   padding: 2px 6px;
   color: #D3DAE3;
   border-color: #2b2e39;
-  background-color: #444a58; }
+  background-color: #50525c; }
   button separator {
     margin: 4px 1px; }
   button.flat, button.sidebar-button {
@@ -471,7 +471,7 @@ button {
 .inline-toolbar toolbutton > button {
   color: #D3DAE3;
   border-color: #2b2e39;
-  background-color: #444a58; }
+  background-color: #50525c; }
   .inline-toolbar toolbutton > button:hover {
     color: #D3DAE3;
     border-color: #2b2e39;
@@ -2159,7 +2159,7 @@ scale {
     scale fill:disabled {
       background-color: transparent; }
   scale slider {
-    background-color: #444a58;
+    background-color: #50525c;
     border: 1px solid #262933;
     border-radius: 100%;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -2790,7 +2790,7 @@ colorswatch#add-color-button {
   border-width: 1px;
   color: #D3DAE3;
   border-color: #2b2e39;
-  background-color: #444a58; }
+  background-color: #50525c; }
   colorswatch#add-color-button:hover {
     color: #D3DAE3;
     border-color: #2b2e39;
@@ -3968,7 +3968,7 @@ GtkListBox .h4 {
 #content_frame button {
   color: #D3DAE3;
   border-color: #2b2e39;
-  background-color: #444a58; }
+  background-color: #50525c; }
   #content_frame button:hover {
     color: #D3DAE3;
     border-color: #2b2e39;
