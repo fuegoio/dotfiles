@@ -1,6 +1,6 @@
 #! /bin/sh
 
-bspc config border_width        1
+bspc config border_width        2
 bspc config window_gap          20
 bspc config top_padding         0
 bspc config left_padding        5
@@ -12,9 +12,11 @@ bspc config borderless_monocle      true
 bspc config gapless_monocle         true
 bspc config focus_follows_pointer   false
 bspc config pointer_follows_focus   false
-bspc config click_to_focus          true    
+bspc config click_to_focus          true
+bspc confic ignore_ewmh_focus       true 
 
-bspc config center_pseudo_tiled  true
+bspc config remove_disabled_monitors true 
+bspc config remove_unplugged_monitors true
 
 bspc config normal_border_color '#282a36'
 bspc config focused_border_color '#527fc1'
@@ -24,9 +26,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 sxhkd &
 dunst &
+redshift &
 
 $HOME/.core/screens.sh 
-
 compton --config "$HOME/.config/compton/compton.conf" -b
-
-#redshift

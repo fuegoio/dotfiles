@@ -3,9 +3,6 @@
 extern=HDMI1
 intern=eDP1
 
-bspc config remove_disabled_monitors true 
-bspc config remove_unplugged_monitors true
-
 if xrandr | grep "$extern disconnected"; then
     mons -o
     bspc monitor $intern -n $intern -d other2 mail music term web code chrome other1
