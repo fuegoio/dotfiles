@@ -8,6 +8,7 @@ if xrandr | grep "$extern disconnected"; then
     bspc monitor $intern -n $intern -d other2 mail music term web code chrome other1
     bspc monitor $intern -o term web code chrome other1 other2 mail music
     bspc monitor $extern -r
+    bspc desktop -f term
 else
     mons -e right
     xset s off
@@ -22,6 +23,7 @@ else
     bspc desktop Desktop -r
     bspc monitor $extern -d term web code chrome other1 other3 other4
     bspc monitor $intern -n $intern -d other2 mail music
+    bspc desktop -f term
 fi
 
 feh --bg-scale ~/Pictures/wallpaper.jpg &
