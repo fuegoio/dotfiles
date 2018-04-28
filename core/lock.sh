@@ -34,7 +34,7 @@ LOCK_ARGS="--insidecolor=37344500 --ringcolor=ffffffff --line-uses-inside \
           --keyhlcolor=527fc1ff --bshlcolor=ff8e91ff --separatorcolor=00000000 \
           --insidevercolor=527fc1ff --insidewrongcolor=ff8e91ff \
           --ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+86:y+$LOCK_POS" \
-          --radius=15 --veriftext='' --wrongtext=''"
+          --radius=15 --veriftext= --wrongtext= --noinputtext="
 LOCK_CMD="$LOCK_BASE_CMD $LOCK_ARGS"
 
 if [ -e $OUTPUT_IMG ]

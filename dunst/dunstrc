@@ -22,7 +22,7 @@
     icon_position = left 
     icon_path = /usr/share/icons/Arc/status/16/:/usr/share/icons/Arc/devices/16/
     max_icon_size = 64 
-    separator_color = "#527fc1"
+    separator_color = "#7b7bbc"
     startup_notification = false
     frame_width = 1
     frame_color = "#383838"

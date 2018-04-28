@@ -29,12 +29,12 @@ URxvt.clipboard.autocopy:       true
 *color9:      statement
 *color2:      identifier
 *color10:     value
-*color3:      type 
-*color11:     type
+*color3:      special 
+*color11:     special
 *color4:      identifier
 *color12:     identifier 
-*color5:      statement
-*color13:     statement 
+*color5:      global
+*color13:     global 
 *color6:      identifier
 *color14:     identifier 
 *color7:      trivial 

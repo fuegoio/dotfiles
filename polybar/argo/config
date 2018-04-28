@@ -12,7 +12,7 @@ module-margin-left = 3
 module-margin-right = 3
 
 line-size = 2
-line-color = #55ffffff
+line-color = #7b7bbc
 
 tray-position = right
 
@@ -133,7 +133,7 @@ format = <label-state> <label-mode>
 label-focused = %icon%
 label-focused-foreground = #ffffff
 label-focused-background = #4e5060
-label-focused-overline = #D3DAE3
+label-focused-overline = #7b7bbc
 label-focused-font = 3
 label-focused-padding = 4
 
@@ -213,6 +213,8 @@ ramp-coreload-7-foreground = #ef6165
 [module/date]
 type = internal/date
 date = %%{F#f9f9f9}%Y-%m-%d%%{F-}  %%{F#f9f9f9}%H:%M%%{F-}
+
+format-underline = #7b7bbc
 
 [module/memory]
 type = internal/memory

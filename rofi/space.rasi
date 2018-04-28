@@ -8,7 +8,7 @@
    blackdarkest:     #282a36;
    blackwidget:      #181d2a;
    blackentry:       #282a36;
-   blackselect:      #181d2a;
+   blackselect:      #7b7bbc;
    darkgray:         #87a5d2;
    scrollbarcolor:   #87a5d2;
    font: "Lato Semi-Bold 11";
@@ -70,7 +70,7 @@ element normal.active {
 
 element selected.normal {
     background-color: @blackselect;
-    text-color:       @maincolor;
+    text-color:       @fgwhite;
 }
 
 element selected.urgent {
