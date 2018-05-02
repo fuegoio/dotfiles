@@ -1,41 +1,42 @@
 #include </home/fuego/.termcolors/kodewolf>
 
 Xft.dpi:                        96
-Xcursor.size: 			16 
+Xcursor.size: 			16
+ 
 URxvt*termName:                 xterm-256color
-URxvt*font:                     xft:Menlo:pixelsize=12,xft:Fira\ Mono\ for\ Powerline:pixelsize=12
-URxvt.depth:                    32
+URxvt*font:                     xft:FuraCode Nerd Font Mono:pixelsize=12
+URxvt*depth:                    32
 URxvt*lineSpace:                1
-URxvt.letterSpace:              -1
-URxvt.iso14755:                 false
-URxvt.iso14755_52:              false
-URxvt*geometry:                 65x17
-URxvt.scrollBar:                false
-URxvt*loginShell:               true
-URxvt.internalBorder:           35
-URxvt.clipboard.autocopy:       true
-
-!URxvt.transparent:              true
-!URxvt.shading:                  5
+URxvt*letterSpace:              -1 
+URxvt*scrollBar:                false
+URxvt*internalBorder:           24
+URxvt*buffered:                 true
+URxvt*saveLines:                9999
+URxvt*hold:                     false
+URxvt*jumpScroll:               false
+URxvt*skipScroll:               false
+URxvt*urgentOnBell:             true
+URxvt*scrollstyle:              plain
 
 ! Colors
-*background:   black
-*foreground:   white
-*cursorColor:  identifier
+URxvt*background:   black
+URxvt*foreground:   white
+URxvt*cursorColor:  identifier 
+URxvt*underlineColor: global
 
-*color0:      black
-*color8:      identifier
-*color1:      statement
-*color9:      statement
-*color2:      identifier
-*color10:     value
-*color3:      special 
-*color11:     special
-*color4:      identifier
-*color12:     identifier 
-*color5:      global
-*color13:     global 
-*color6:      identifier
-*color14:     identifier 
-*color7:      trivial 
-*color15:     white
+URxvt*color0: black
+URxvt*color1: statement
+URxvt*color2: identifier
+URxvt*color3: global
+URxvt*color4: identifier
+URxvt*color5: statement
+URxvt*color6: identifier
+URxvt*color7: white
+URxvt*color8: black
+URxvt*color9: statement
+URxvt*color10: identifier
+URxvt*color11: global
+URxvt*color12: identifier
+URxvt*color13: statement
+URxvt*color14: identifier
+URxvt*color15: white
