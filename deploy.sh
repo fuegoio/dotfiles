@@ -36,20 +36,16 @@ ln -s $(pwd)/ssh/config ~/.ssh/config
 rm -rf ~/.config/sxhkd
 ln -s $(pwd)/sxhkd/$(hostname) ~/.config/sxhkd
 
-rm -rf ~/.termcolors
-ln -s $(pwd)/termcolors ~/.termcolors
-
 rm -f ~/.Xresources
 ln -s $(pwd)/system/.Xresources ~/.Xresources
 
 rm -f ~/.gitconfig
 ln -s $(pwd)/system/.gitconfig ~/.gitconfig
 
-rm -f ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-ln -s $(pwd)/sublime_text/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-
-rm -f ~/.PyCharm2017.2/config/colors/Material\ Theme\ -\ Kodewolf.icls
-ln -s $(pwd)/pycharm/Material\ Theme\ -\ Kodewolf.icls ~/.PyCharm2017.2/config/colors/Material\ Theme\ -\ Kodewolf.icls
+rm -f ~/.vimrc
+ln -s $(pwd)/vim/.vimrc ~/.vimrc
+rm -rf ~/.vim
+ln -s $(pwd)/vim/.vim ~/.vim
 
 # Sudo part
 

@@ -1,5 +1,3 @@
-#include </home/fuego/.termcolors/kodewolf>
-
 Xft.dpi:                        96
 Xcursor.size: 			16
  
@@ -18,25 +16,40 @@ URxvt*skipScroll:               false
 URxvt*urgentOnBell:             true
 URxvt*scrollstyle:              plain
 
-! Colors
-URxvt*background:   black
-URxvt*foreground:   white
-URxvt*cursorColor:  identifier 
-URxvt*underlineColor: global
+#define space0 #282a36
+#define space1 #343746
+#define space2 #3e4154
+#define space3 #4a4e64
+#define space4 #e9e9e9
+#define space5 #efefef
+#define space6 #f9f9f9
+#define space7 #93aace
+#define space8 #9a9acc
+#define space9 #87a5d2
+#define space10 #7b7bbc
+#define space11 #ff8e91
+#define space12 #ffac8d
+#define space13 #ffcb8d
+#define space14 #97d28b
+#define space15 #ff8faa
 
-URxvt*color0: black
-URxvt*color1: statement
-URxvt*color2: identifier
-URxvt*color3: global
-URxvt*color4: identifier
-URxvt*color5: statement
-URxvt*color6: identifier
-URxvt*color7: white
-URxvt*color8: black
-URxvt*color9: statement
-URxvt*color10: identifier
-URxvt*color11: global
-URxvt*color12: identifier
-URxvt*color13: statement
-URxvt*color14: identifier
-URxvt*color15: white
+*.foreground:   space4
+*.background:   space0
+*.cursorColor:  space4
+
+*.color0: space1
+*.color1: space12
+*.color2: space9
+*.color3: space13
+*.color4: space9
+*.color5: space8
+*.color6: space5
+*.color7: space6
+*.color8: space3
+*.color9: space11
+*.color10: space9
+*.color11: space13
+*.color12: space7
+*.color13: space10
+*.color14: space14
+*.color15: space15

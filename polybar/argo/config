@@ -19,7 +19,7 @@ tray-position = right
 wm-restack = bspwm
 
 font-0 = Lato:size=9;1
-font-1 = MaterialIcons:size=13;3
+font-1 = MaterialIcons:size=13;4
 font-2 = FontAwesome:size=10;2
 
 modules-left = bspwm 
@@ -42,7 +42,7 @@ module-margin-right = 3
 wm-restack = bspwm
 
 font-0 = Lato:size=9;1
-font-1 = MaterialIcons:size=13;3
+font-1 = MaterialIcons:size=13;4
 font-2 = FontAwesome:size=10;2
 
 modules-left = bspwm
@@ -120,11 +120,10 @@ type = internal/bspwm
 ws-icon-0 = term;
 ws-icon-1 = web;
 ws-icon-2 = code;
-ws-icon-3 = mail;
+ws-icon-3 = design;
 ws-icon-4 = music;
 ws-icon-5 = chrome;
-ws-icon-6 = notes;
-ws-icon-default = 
+ws-icon-default = 
 
 pin-workspaces = true
 

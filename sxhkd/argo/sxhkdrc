@@ -32,8 +32,8 @@ ctrl + alt + Escape
 super + Escape
 	pkill -USR1 -x sxhkd
 
-super + e ; {f,e,t,m,s,y}
-	{firefox-nightly,pcmanfm,thunderbird-nightly,spotify,subl,abricotine}
+super + e ; {f,e,m,i}
+	{firefox-nightly,pcmanfm,spotify,inkscape}
 
 super + i 
 	~/.core/lock.sh	
@@ -67,7 +67,7 @@ super + ctrl + {a,o,e}
 #
 
 # focus the node in the given direction
-super + {_,shift + }{g,c,r,l}
+super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the next/previous desktop
@@ -79,18 +79,18 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
  
 # focus to the given desktop
-super + {_,alt + }{h,t,n,s}
+super + {_,alt + }{g,t,n,s}
 	bspc {desktop -f,node -d} '{term,web,code,chrome}'
 
-super + {shift +,shift + alt + }{h,t,n,s}
-	bspc {desktop -f,node -d} '{other1,other2,mail,^9}'
+super + {shift +,shift + alt + }{g,t,n,s}
+	bspc {desktop -f,node -d} '{design,other1,other2,music}'
 
 #
 # preselect
 #
 
 # preselect the direction
-super + ctrl + {g,c,r,l}
+super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio
@@ -110,11 +110,11 @@ super + ctrl + shift + space
 #
 
 # expand a window by moving one of its side outward
-super + alt + {g,c,r,l}
+super + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {g,c,r,l}
+super + alt + shift + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating windowu

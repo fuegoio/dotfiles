@@ -18,6 +18,17 @@ set -gx PATH $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $PATH
 
 set -U fish_greeting "Welcome to argo. Go faire du sale."
 
+fish_vi_key_bindings insert
+function fish_user_key_bindings
+    for mode in insert default visual
+        bind -M $mode \cf forward-char
+    end
+end
+
+function fish_mode_prompt
+  echo ''
+end
+
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
 end
@@ -32,7 +43,8 @@ function fish_prompt
   set -l last_status $status
   set -l red (set_color -o red)
   set -l blue (set_color -o blue)
-  set -l purple (set_color -o yellow)
+  set -l purple (set_color -o magenta)
+  set -l yellow (set_color -o yellow)
   set -l normal (set_color normal)
 
   set -l host $purple(hostname)
@@ -42,10 +54,10 @@ function fish_prompt
   if [ (_git_branch_name) ]
     if test (_git_branch_name) = 'master'
       set -l git_branch (_git_branch_name)
-      set git_info "$normal ($purple $git_branch$normal)"
+      set git_info "$normal ($red $git_branch$normal)"
     else if test (_git_branch_name) = 'dev'
       set -l git_branch (_git_branch_name)
-      set git_info "$normal ($red $git_branch$normal)"
+      set git_info "$normal ($yellow $git_branch$normal)"
     else
       set -l git_branch (_git_branch_name)
       set git_info "$normal ($blue $git_branch$normal)"
