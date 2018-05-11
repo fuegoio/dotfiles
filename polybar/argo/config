@@ -240,7 +240,7 @@ interface = wlp2s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-label-connected = %essid%  (%downspeed%)
+label-connected = %essid%  (%upspeed% . %downspeed%)
 label-disconnected =    not connected
 label-disconnected-foreground = #778ca1
 
