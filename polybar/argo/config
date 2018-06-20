@@ -1,7 +1,7 @@
 [bar/top]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 30
+height = 32 
 
 background = #282a36
 foreground = #f9f9f9
@@ -24,7 +24,7 @@ font-2 = FontAwesome:size=10;2
 
 modules-left = bspwm 
 modules-center = date
-modules-right = vpn wireless-network battery
+modules-right = wireless-network backlight volume battery
 
 [bar/external_top]
 monitor = eDP1
@@ -47,65 +47,28 @@ font-2 = FontAwesome:size=10;2
 
 modules-left = bspwm
 
-[bar/bottom]
-monitor = ${env:MONITOR:}
-bottom = true
-width = 100%
-height = 24
-
-background = #00000000
-foreground = #f9f9f9
-
-spacing = 3
-lineheight = 2
-padding-left = 4
-padding-right = 4
-module-margin-left = 5
-module-margin-right = 6
-
-wm-restack = bspwm
-
-font-0 = Lato:size=9;-1
-font-1 = MaterialIcons:size=10;0
-font-2 = Termsynu:size=8;0
-font-3 = FontAwesome:size=8;-1
-
-modules-left = backlight volume
-modules-right = cpu memory temperature
-
-[module/vpn]
-type = custom/script
-exec = ~/.core/vpn_status.sh
-
 [module/backlight]
 type = internal/xbacklight
 format = <label>
-label =    %percentage%%
+label = %{F#ff8faa}%{F-}   %percentage%%
 
 [module/battery]
 type = internal/battery
-full-at = 98
 
 format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
 format-full = <ramp-capacity> <label-full>
 
 ramp-capacity-0 = 
-ramp-capacity-0-foreground = #ef6165
+ramp-capacity-0-foreground = #ff8e91
 ramp-capacity-1 = 
-ramp-capacity-1-foreground = #ffb154
+ramp-capacity-1-foreground = #ffac8d
 ramp-capacity-2 = 
+ramp-capacity-2-foreground = #ffcb8d
 ramp-capacity-3 = 
+ramp-capacity-3-foreground = #9b88d9
 ramp-capacity-4 = 
-
-bar-capacity-width = 10
-bar-capacity-format = %{+u}%{+o}%fill%%empty%%{-u}%{-o}
-bar-capacity-fill = █
-bar-capacity-fill-foreground = #ddffffff
-bar-capacity-fill-font = 2
-bar-capacity-empty = █
-bar-capacity-empty-font = 2
-bar-capacity-empty-foreground = #44ffffff
+ramp-capacity-4-foreground = #92b3ea
 
 animation-charging-0 = 
 animation-charging-1 = 
@@ -113,6 +76,7 @@ animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
+animation-charging-foreground = #97d28b
 
 [module/bspwm]
 type = internal/bspwm
@@ -131,108 +95,29 @@ format = <label-state> <label-mode>
 
 label-focused = %icon%
 label-focused-foreground = #ffffff
-label-focused-background = #4e5060
-label-focused-overline = #7b7bbc
+label-focused-background = #79a2e7
 label-focused-font = 3
-label-focused-padding = 4
+label-focused-padding = 5
 
 label-occupied = %icon%
 label-occupied-foreground = #f9f9f9
 label-occupied-font = 3
-label-occupied-padding = 4
+label-occupied-padding = 5
 
 label-urgent = %icon%
-label-urgent-background = #ffac8d
+label-urgent-background = #ff8e91
 label-urgent-font = 3
-label-urgent-padding = 4
+label-urgent-padding = 5
 
 label-empty = %icon%
-label-empty-foreground = #92ffffff
+label-empty-foreground = #4a4e64
 label-empty-font = 3
-label-empty-padding = 4
-
-label-monocle = 
-label-monocle-background = #3c527fc1
-label-monocle-padding = 2
-
-label-locked = 
-label-locked-foreground = #ffcb8d
-label-locked-padding = ${module/bspwm.label-monocle-padding}
-
-label-sticky = 
-label-sticky-foreground = #ffcb8d
-label-sticky-padding = ${module/bspwm.label-monocle-padding}
-
-label-private = 
-label-private-foreground = #ffcb8d
-label-private-padding = ${module/bspwm.label-monocle-padding}
-
-[module/bspwm-tmp]
-type = internal/bspwm
-format = <label-state>
-
-label-focused = 
-label-focused-padding = 1
-label-occupied = 
-label-occupied-padding = 1
-label-empty = 
-label-empty-padding = 1
-
-[module/cpu]
-type = internal/cpu
-interval = 0.5
-format = <label> <ramp-coreload>
-label = CPU
-
-ramp-coreload-0 = ▁
-ramp-coreload-0-font = 2
-ramp-coreload-0-foreground = #f9f9f9
-ramp-coreload-1 = ▂
-ramp-coreload-1-font = 2
-ramp-coreload-1-foreground = #f9f9f9
-ramp-coreload-2 = ▃
-ramp-coreload-2-font = 2
-ramp-coreload-2-foreground = #f9f9f9
-ramp-coreload-3 = ▄
-ramp-coreload-3-font = 2
-ramp-coreload-3-foreground = #f9f9f9
-ramp-coreload-4 = ▅
-ramp-coreload-4-font = 2
-ramp-coreload-4-foreground = #ffb154
-ramp-coreload-5 = ▆
-ramp-coreload-5-font = 2
-ramp-coreload-5-foreground = #ffb154
-ramp-coreload-6 = ▇
-ramp-coreload-6-font = 2
-ramp-coreload-6-foreground = #ef6165
-ramp-coreload-7 = █
-ramp-coreload-7-font = 2
-ramp-coreload-7-foreground = #ef6165
+label-empty-padding = 5
 
 [module/date]
 type = internal/date
 date = %%{F#f9f9f9}%Y-%m-%d%%{F-}  %%{F#f9f9f9}%H:%M%%{F-}
-
-format-underline = #7b7bbc
-
-[module/memory]
-type = internal/memory
-format = <label> <bar-used>
-label = RAM
-
-bar-used-width = 30
-bar-used-foreground-0 = #f9f9f9
-bar-used-foreground-1 = #f9f9f9
-bar-used-foreground-2 = #ffb154
-bar-used-foreground-3 = #ef6165
-bar-used-indicator = |
-bar-used-indicator-font = 2
-bar-used-indicator-foreground = #ff
-bar-used-fill = ─
-bar-used-fill-font = 2
-bar-used-empty = ─
-bar-used-empty-font = 2
-bar-used-empty-foreground = #444444
+format-underline = #79a2e7
 
 [module/wireless-network]
 type = internal/network
@@ -241,28 +126,31 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid%  (%upspeed% . %downspeed%)
-label-disconnected =    not connected
-label-disconnected-foreground = #778ca1
+label-disconnected = %{F#ff8e91}%{F-}   %{F#4a4e64}Not connected%{F-}
 
 ramp-signal-0 = 
+ramp-signal-0-foreground = #ff8e91
 ramp-signal-1 = 
+ramp-signal-1-foreground = #ffac8d
 ramp-signal-2 = 
+ramp-signal-2-foreground = #ffcb8d
 ramp-signal-3 = 
+ramp-signal-3-foreground = #9b88d9
 ramp-signal-4 = 
+ramp-signal-4-foreground = #92b3ea
 
 [module/volume]
 type = internal/pulseaudio
 
 format-volume = <ramp-volume> <label-volume>
-label-muted =   muted
-label-muted-foreground = #778ca1
+label-muted = %{F#ff8e91}%{F-}  %{F#4a4e64}muted%{F-}
 
 ramp-volume-0 = 
+ramp-volume-0-foreground = #ff8e91
 ramp-volume-1 = 
+ramp-volume-1-foreground = #ffac8d
 ramp-volume-2 = 
+ramp-volume-2-foreground = #ffcb8d
 ramp-volume-3 = 
+ramp-volume-3-foreground = #92b3ea
 
-[module/temperature]
-type = internal/temperature
-interval = 1
-hwmon-path = /sys/class/thermal/thermal_zone9/temp

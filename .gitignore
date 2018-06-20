@@ -2,3 +2,6 @@ fish/fishd.*
 fish/fish_history
 
 .cache/
+
+vim/.vim/swap
+vim/.vim/.netrwhist

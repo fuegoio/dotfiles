@@ -16,5 +16,5 @@ else
     bspc desktop -f term
 fi
 
-feh --bg-scale ~/Pictures/wallpaper.jpg &
+feh --bg-scale ~/Pictures/wallpaper.png &
 $HOME/.config/polybar/start.sh
