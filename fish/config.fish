@@ -13,9 +13,10 @@ alias vpnon="sudo systemctl start wg-quick@wg0"
 alias vpnoff="sudo systemctl stop wg-quick@wg0"
 
 set -x EDITOR vim
-set -x ANDROID_HOME "/home/fuego/Android/Sdk"
-set -gx PATH $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $PATH
+set -gx ANDROID_HOME $HOME/Android/Sdk
+set -gx npm_config_prefix $HOME/.node_modules
 
+set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.node_modules/bin
 set -U fish_greeting "Welcome to argo. Go faire du sale."
 
 fish_vi_key_bindings insert

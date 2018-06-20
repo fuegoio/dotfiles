@@ -23,10 +23,10 @@ let s:space3_gui = "#4a4e64"
 let s:space4_gui = "#e9e9e9"
 let s:space5_gui = "#efefef"
 let s:space6_gui = "#f9f9f9"
-let s:space7_gui = "#93aace"
-let s:space8_gui = "#9a9acc"
-let s:space9_gui = "#87a5d2"
-let s:space10_gui = "#7b7bbc"
+let s:space7_gui = "#92b3ea"
+let s:space8_gui = "#a796de"
+let s:space9_gui = "#79a2e7"
+let s:space10_gui = "#9b88d9"
 let s:space11_gui = "#ff8e91"
 let s:space12_gui = "#ffac8d"
 let s:space13_gui = "#ffcb8d"
@@ -35,41 +35,16 @@ let s:space15_gui = "#ff8faa"
 
 let s:space1_term = "0"
 let s:space3_term = "8"
-let s:space5_term = "6"
-let s:space6_term = "7"
-let s:space7_term = "12"
+let s:space6_term = "6"
+let s:space7_term = "4"
 let s:space8_term = "5"
-let s:space9_term = "4"
-let s:space10_term = "13"
-let s:space11_term = "9"
-let s:space12_term = "1"
+let s:space9_term = "2"
+let s:space10_term = "3"
+let s:space11_term = "1"
+let s:space12_term = "7"
 let s:space13_term = "11"
 let s:space14_term = "14"
 let s:space15_term = "15"
-
-let s:space3_gui_brightened = [
-  \ s:space3_gui,
-  \ "#4e586d",
-  \ "#505b70",
-  \ "#525d73",
-  \ "#556076",
-  \ "#576279",
-  \ "#59647c",
-  \ "#5b677f",
-  \ "#5d6982",
-  \ "#5f6c85",
-  \ "#616e88",
-  \ "#63718b",
-  \ "#66738e",
-  \ "#687591",
-  \ "#6a7894",
-  \ "#6d7a96",
-  \ "#6f7d98",
-  \ "#72809a",
-  \ "#75829c",
-  \ "#78859e",
-  \ "#7b88a1",
-\ ]
 
 if !exists("g:space_italic")
   if has("gui_running") || $TERM_ITALICS == "true"
@@ -136,7 +111,7 @@ call s:hi("Underline", "", "", "", "", "underline", "")
 call s:hi("ColorColumn", "", s:space1_gui, "NONE", s:space1_term, "", "")
 call s:hi("Cursor", s:space0_gui, s:space4_gui, "", "NONE", "", "")
 call s:hi("CursorLine", "", s:space1_gui, "NONE", s:space1_term, "NONE", "")
-call s:hi("Error", s:space0_gui, s:space11_gui, "", s:space11_term, "", "")
+call s:hi("Error", s:space11_gui, "", s:space11_term, "NONE", "", "")
 call s:hi("iCursor", s:space0_gui, s:space4_gui, "", "NONE", "", "")
 call s:hi("LineNr", s:space3_gui, s:space0_gui, s:space3_term, "NONE", "", "")
 call s:hi("MatchParen", s:space8_gui, s:space3_gui, s:space8_term, s:space3_term, "", "")
@@ -147,37 +122,12 @@ call s:hi("PmenuSbar", s:space4_gui, s:space2_gui, "NONE", s:space1_term, "", ""
 call s:hi("PMenuSel", s:space8_gui, s:space3_gui, s:space8_term, s:space3_term, "", "")
 call s:hi("PmenuThumb", s:space8_gui, s:space3_gui, "NONE", s:space3_term, "", "")
 call s:hi("SpecialKey", s:space3_gui, "", s:space3_term, "", "", "")
-call s:hi("SpellBad", "", s:space0_gui, "", "NONE", "undercurl", s:space11_gui)
-call s:hi("SpellCap", "", s:space0_gui, "", "NONE", "undercurl", s:space13_gui)
-call s:hi("SpellLocal", "", s:space0_gui, "", "NONE", "undercurl", s:space5_gui)
-call s:hi("SpellRare", "", s:space0_gui, "", "NONE", "undercurl", s:space6_gui)
+call s:hi("SpellBad", "", s:space11_gui, "", s:space11_term, "", "")
+call s:hi("SpellCap", "", s:space12_gui, "", s:space12_term, "", "")
+call s:hi("SpellLocal", "", s:space12_gui, "", s:space12_term, "", "")
+call s:hi("SpellRare", "", s:space12_gui, "", s:space12_term, "", "")
 call s:hi("Visual", "", s:space2_gui, "", s:space1_term, "", "")
 call s:hi("VisualNOS", "", s:space2_gui, "", s:space1_term, "", "")
-"+- Neovim Support -+
-call s:hi("healthError", s:space11_gui, s:space1_gui, s:space11_term, s:space1_term, "", "")
-call s:hi("healthSuccess", s:space14_gui, s:space1_gui, s:space14_term, s:space1_term, "", "")
-call s:hi("healthWarning", s:space13_gui, s:space1_gui, s:space13_term, s:space1_term, "", "")
-call s:hi("TermCursorNC", "", s:space1_gui, "", s:space1_term, "", "")
-
-"+- Neovim Terminal Colors -+
-if has('nvim')
-  let g:terminal_color_0 = s:space1_gui
-  let g:terminal_color_1 = s:space11_gui
-  let g:terminal_color_2 = s:space9_gui
-  let g:terminal_color_3 = s:space13_gui
-  let g:terminal_color_4 = s:space9_gui
-  let g:terminal_color_5 = s:space15_gui
-  let g:terminal_color_6 = s:space8_gui
-  let g:terminal_color_7 = s:space5_gui
-  let g:terminal_color_8 = s:space3_gui
-  let g:terminal_color_9 = s:space11_gui
-  let g:terminal_color_10 = s:space9_gui
-  let g:terminal_color_11 = s:space13_gui
-  let g:terminal_color_12 = s:space9_gui
-  let g:terminal_color_13 = s:space15_gui
-  let g:terminal_color_14 = s:space7_gui
-  let g:terminal_color_15 = s:space6_gui
-endif
 
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:space1_gui, "NONE", s:space1_term, "", "")
@@ -191,19 +141,19 @@ call s:hi("Directory", s:space8_gui, "", s:space8_term, "NONE", "", "")
 
 "+--- Prompt/Status ---+
 call s:hi("EndOfBuffer", s:space1_gui, "", s:space1_term, "NONE", "", "")
-call s:hi("ErrorMsg", s:space4_gui, s:space11_gui, "NONE", s:space11_term, "", "")
+call s:hi("ErrorMsg", s:space11_gui, "", s:space11_term, "NONE", "", "")
 call s:hi("ModeMsg", s:space4_gui, "", "", "", "", "")
 call s:hi("MoreMsg", s:space4_gui, "", "", "", "", "")
 call s:hi("Question", s:space4_gui, "", "NONE", "", "", "")
 if g:space_uniform_status_lines == 0
-  call s:hi("StatusLine", s:space8_gui, s:space3_gui, s:space8_term, s:space3_term, "NONE", "")
+  call s:hi("StatusLine", s:space7_gui, s:space3_gui, s:space7_term, s:space3_term, "NONE", "")
   call s:hi("StatusLineNC", s:space4_gui, s:space1_gui, "NONE", s:space1_term, "NONE", "")
-  call s:hi("StatusLineTerm", s:space8_gui, s:space3_gui, s:space8_term, s:space3_term, "NONE", "")
+  call s:hi("StatusLineTerm", s:space7_gui, s:space3_gui, s:space7_term, s:space3_term, "NONE", "")
   call s:hi("StatusLineTermNC", s:space4_gui, s:space1_gui, "NONE", s:space1_term, "NONE", "")
 else
-  call s:hi("StatusLine", s:space8_gui, s:space3_gui, s:space8_term, s:space3_term, "NONE", "")
+  call s:hi("StatusLine", s:space7_gui, s:space3_gui, s:space7_term, s:space3_term, "NONE", "")
   call s:hi("StatusLineNC", s:space4_gui, s:space3_gui, "NONE", s:space3_term, "NONE", "")
-  call s:hi("StatusLineTerm", s:space8_gui, s:space3_gui, s:space8_term, s:space3_term, "NONE", "")
+  call s:hi("StatusLineTerm", s:space7_gui, s:space3_gui, s:space7_term, s:space3_term, "NONE", "")
   call s:hi("StatusLineTermNC", s:space4_gui, s:space3_gui, "NONE", s:space3_term, "NONE", "")
 endif
 call s:hi("WarningMsg", s:space0_gui, s:space13_gui, s:space1_term, s:space13_term, "", "")
@@ -225,35 +175,35 @@ call s:hi("VertSplit", s:space2_gui, s:space1_gui, s:space3_term, s:space1_term,
 "+----------------------+
 "+ Language Base Groups +
 "+----------------------+
-call s:hi("Boolean", s:space9_gui, "", s:space9_term, "", "", "")
-call s:hi("Character", s:space9_gui, "", s:space9_term, "", "", "")
-call s:hi("Comment", s:space3_gui_brightened[g:space_comment_brightness], "", s:space3_term, "", s:italicize_comments, "")
-call s:hi("Conditional", s:space9_gui, "", s:space9_term, "", "", "")
-call s:hi("Constant", s:space4_gui, "", "NONE", "", "", "")
-call s:hi("Define", s:space9_gui, "", s:space9_term, "", "", "")
+call s:hi("Boolean", s:space8_gui, "", s:space8_term, "", "", "")
+call s:hi("Character", s:space7_gui, "", s:space7_term, "", "", "")
+call s:hi("Comment", s:space3_gui, "", s:space3_term, "", s:italicize_comments, "")
+call s:hi("Conditional", s:space8_gui, "", s:space8_term, "", "", "")
+call s:hi("Constant", s:space8_gui, "", s:space8_term, "", "", "")
+call s:hi("Define", s:space13_gui, "", s:space13_term, "", "", "")
 call s:hi("Delimiter", s:space6_gui, "", s:space6_term, "", "", "")
-call s:hi("Exception", s:space9_gui, "", s:space9_term, "", "", "")
+call s:hi("Exception", s:space11_gui, "", s:space11_term, "", "", "")
 call s:hi("Float", s:space15_gui, "", s:space15_term, "", "", "")
-call s:hi("Function", s:space8_gui, "", s:space8_term, "", "", "")
-call s:hi("Identifier", s:space4_gui, "", "NONE", "", "NONE", "")
-call s:hi("Include", s:space9_gui, "", s:space9_term, "", "", "")
-call s:hi("Keyword", s:space9_gui, "", s:space9_term, "", "", "")
-call s:hi("Label", s:space9_gui, "", s:space9_term, "", "", "")
+call s:hi("Function", s:space7_gui, "", s:space7_term, "", "", "")
+call s:hi("Identifier", s:space7_gui, "", s:space7_term, "", "NONE", "")
+call s:hi("Include", s:space7_gui, "", s:space7_term, "", "", "")
+call s:hi("Keyword", s:space14_gui, "", s:space14_term, "", "", "")
+call s:hi("Label", s:space7_gui, "", s:space7_term, "", "", "")
 call s:hi("Number", s:space15_gui, "", s:space15_term, "", "", "")
-call s:hi("Operator", s:space9_gui, "", s:space9_term, "", "NONE", "")
-call s:hi("PreProc", s:space9_gui, "", s:space9_term, "", "NONE", "")
-call s:hi("Repeat", s:space9_gui, "", s:space9_term, "", "", "")
-call s:hi("Special", s:space4_gui, "", "NONE", "", "", "")
+call s:hi("Operator", s:space12_gui, "", s:space12_term, "", "NONE", "")
+call s:hi("PreProc", s:space7_gui, "", s:space7_term, "", "NONE", "")
+call s:hi("Repeat", s:space8_gui, "", s:space8_term, "", "", "")
+call s:hi("Special", s:space8_gui, "", s:space8_term, "", "", "")
 call s:hi("SpecialChar", s:space13_gui, "", s:space13_term, "", "", "")
 call s:hi("SpecialComment", s:space8_gui, "", s:space8_term, "", s:italicize_comments, "")
-call s:hi("Statement", s:space9_gui, "", s:space9_term, "", "", "")
-call s:hi("StorageClass", s:space9_gui, "", s:space9_term, "", "", "")
-call s:hi("String", s:space14_gui, "", s:space14_term, "", "", "")
-call s:hi("Structure", s:space9_gui, "", s:space9_term, "", "", "")
+call s:hi("Statement", s:space14_gui, "", s:space14_term, "", "", "")
+call s:hi("StorageClass", s:space7_gui, "", s:space7_term, "", "", "")
+call s:hi("String", s:space15_gui, "", s:space15_term, "", "", "")
+call s:hi("Structure", s:space7_gui, "", s:space7_term, "", "", "")
 call s:hi("Tag", s:space4_gui, "", "", "", "", "")
 call s:hi("Todo", s:space13_gui, "NONE", s:space13_term, "NONE", "", "")
-call s:hi("Type", s:space9_gui, "", s:space9_term, "", "NONE", "")
-call s:hi("Typedef", s:space9_gui, "", s:space9_term, "", "", "")
+call s:hi("Type", s:space7_gui, "", s:space7_term, "", "NONE", "")
+call s:hi("Typedef", s:space7_gui, "", s:space7_term, "", "", "")
 hi! link Macro Define
 hi! link PreCondit PreProc
 
@@ -549,3 +499,4 @@ hi! link mkdLinkDef mkdLink
 hi! link mkdLinkDefTarget mkdURL
 hi! link mkdLinkTitle mkdInlineURL
 hi! link mkdDelimiter Keyword
+

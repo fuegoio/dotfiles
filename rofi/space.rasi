@@ -1,14 +1,13 @@
 /* global settings and color variables */
 * {
-   maincolor:        #93aace;
-   highlight:        bold #93aace;
+   maincolor:        #92b3ea;
    urgentcolor:      #ff8e91;
 
    fgwhite:          #f9f9f9;
    blackdarkest:     #282a36;
    blackwidget:      #181d2a;
    blackentry:       #282a36;
-   blackselect:      #9a9acc;
+   blackselect:      #a796de;
    darkgray:         #93aace;
    scrollbarcolor:   #93aace;
    font: "Lato Semi-Bold 11";
@@ -69,7 +68,7 @@ element normal.active {
 }
 
 element selected.normal {
-    background-color: @blackselect;
+    background-color: @maincolor;
     text-color:       @fgwhite;
 }
 
@@ -79,7 +78,7 @@ element selected.urgent {
 }
 
 element selected.active {
-    background-color: @maincolor;
+    background-color: @blackselect;
     text-color:       @fgwhite;
 }
 

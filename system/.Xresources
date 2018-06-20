@@ -1,13 +1,13 @@
 Xft.dpi:                        96
-Xcursor.size: 			16
- 
+Xft.antialias:                  true
+
 URxvt*termName:                 xterm-256color
-URxvt*font:                     xft:FuraCode Nerd Font Mono:pixelsize=12
+URxvt*font:                     xft:FuraCode Nerd Font Mono:pixelsize=12:antialias=true
 URxvt*depth:                    32
 URxvt*lineSpace:                1
-URxvt*letterSpace:              -1 
+URxvt*letterSpace:              -1
 URxvt*scrollBar:                false
-URxvt*internalBorder:           24
+URxvt*internalBorder:           28
 URxvt*buffered:                 true
 URxvt*saveLines:                9999
 URxvt*hold:                     false
@@ -23,33 +23,36 @@ URxvt*scrollstyle:              plain
 #define space4 #e9e9e9
 #define space5 #efefef
 #define space6 #f9f9f9
-#define space7 #93aace
-#define space8 #9a9acc
-#define space9 #87a5d2
-#define space10 #7b7bbc
+#define space7 #92b3ea
+#define space8 #a796de
+#define space9 #79a2e7
+#define space10 #9b88d9
 #define space11 #ff8e91
 #define space12 #ffac8d
 #define space13 #ffcb8d
 #define space14 #97d28b
 #define space15 #ff8faa
 
-*.foreground:   space4
-*.background:   space0
-*.cursorColor:  space4
+URxvt*.foreground:   space4
+URxvt*.background:   space0
+URxvt*.cursorColor:  space4
+URxvt*.cursorColor2:  space4
+URxvt*.colorBD:  space4
+URxvt*.colorUL:  space4
 
 *.color0: space1
-*.color1: space12
-*.color2: space9
-*.color3: space13
-*.color4: space9
+*.color1: space11
+*.color2: space7
+*.color3: space10
+*.color4: space7
 *.color5: space8
-*.color6: space5
-*.color7: space6
+*.color6: space4
+*.color7: space12
 *.color8: space3
 *.color9: space11
-*.color10: space9
+*.color10: space7
 *.color11: space13
 *.color12: space7
-*.color13: space10
+*.color13: space8
 *.color14: space14
 *.color15: space15
