@@ -70,10 +70,10 @@ function fish_right_prompt
   if [ (_git_branch_name) ]
     set git_branch "$pink  " (_git_branch_name)
     if [ (_is_git_not_pushed) ]
-      set git_not_pushed "$green  "
+      set git_not_pushed "$green ﱢ "
     end
     if [ (_is_git_dirty) ]
-      set git_dirty "$yellow  "
+      set git_dirty "$yellow 柳"
     end
   end
 
