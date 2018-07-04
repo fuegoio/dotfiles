@@ -139,6 +139,8 @@ command! -nargs=+ -complete=dir AgIn call SearchWithAgInDirectory(<f-args>)
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+nnoremap <leader>g :YcmCompleter GoTo<CR>
+let g:ycm_python_binary_path = 'python'
 
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'zathura'

@@ -2,10 +2,10 @@ Xft.dpi:                        96
 Xft.antialias:                  true
 
 URxvt*termName:                 xterm-256color
-URxvt*font:                     xft:FuraCode Nerd Font Mono:pixelsize=12:antialias=true
+URxvt*font:                     xft:FuraCode Nerd Font:pixelsize=12:antialias=true
 URxvt*depth:                    32
 URxvt*lineSpace:                1
-URxvt*letterSpace:              -1
+URxvt*letterSpace:              -0.5
 URxvt*scrollBar:                false
 URxvt*internalBorder:           28
 URxvt*buffered:                 true

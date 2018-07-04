@@ -25,7 +25,7 @@ LOCK_BASE_CMD="i3lock -n -i $OUTPUT_IMG"
 
 extern=HDMI1
 if xrandr | grep "$extern disconnected"; then
-  LOCK_POS="1003"
+  LOCK_POS="1001"
 else
   LOCK_POS="1353"
 fi
@@ -33,8 +33,8 @@ fi
 LOCK_ARGS="--insidecolor=37344500 --ringcolor=ffffffff --line-uses-inside \
           --keyhlcolor=527fc1ff --bshlcolor=ff8e91ff --separatorcolor=00000000 \
           --insidevercolor=527fc1ff --insidewrongcolor=ff8e91ff \
-          --ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+86:y+$LOCK_POS" \
-          --radius=15 --veriftext= --wrongtext= --noinputtext="
+          --ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+347:y+$LOCK_POS" \
+          --radius=17 --veriftext= --wrongtext= --noinputtext="
 LOCK_CMD="$LOCK_BASE_CMD $LOCK_ARGS"
 
 if [ -e $OUTPUT_IMG ]

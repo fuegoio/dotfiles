@@ -1,4 +1,3 @@
-abbr go="git checkout"
 abbr gs="git status"
 abbr gcm="git commit -m"
 abbr ga="git add"
@@ -9,15 +8,15 @@ abbr dk="docker"
 abbr dco="docker-compose"
 
 alias screens="/home/fuego/.core/screens.sh"
-alias vpnon="sudo systemctl start wg-quick@wg0"
-alias vpnoff="sudo systemctl stop wg-quick@wg0"
+alias vpnon="sudo wg-quick up wg0"
+alias vpnoff="sudo wg-quick down wg0"
 
 set -x EDITOR vim
 set -gx ANDROID_HOME $HOME/Android/Sdk
 set -gx npm_config_prefix $HOME/.node_modules
 
 set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.node_modules/bin
-set -U fish_greeting "Welcome to argo. Go faire du sale."
+set -U fish_greeting "  Welcome to Argo. Go faire du sale."
 
 fish_vi_key_bindings insert
 function fish_user_key_bindings
@@ -53,21 +52,12 @@ function fish_prompt
   set -l arrow ""
 
   if [ (_git_branch_name) ]
-    if test (_git_branch_name) = 'master'
       set -l git_branch (_git_branch_name)
-      set git_info "$normal ($red $git_branch$normal)"
-    else if test (_git_branch_name) = 'dev'
-      set -l git_branch (_git_branch_name)
-      set git_info "$normal ($yellow $git_branch$normal)"
-    else
-      set -l git_branch (_git_branch_name)
-      set git_info "$normal ($blue $git_branch$normal)"
-    end
-
-    if [ (_is_git_dirty) ]
-      set -l dirty "$red "
-      set git_info "$git_info$dirty"
-    end
+      if [ (_is_git_dirty) ]
+          set git_info "$normal ($yellow $git_branch$normal)"
+      else
+          set git_info "$normal ($red $git_branch$normal)"
+      end
   end
 
   # Notify if a command took more than 10 sec

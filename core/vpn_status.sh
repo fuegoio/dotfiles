@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [[ $(systemctl status wg-quick@wg0 | grep " active") ]]; then
-    echo '   Connected to centaurus'
+if [[ $(ip addr show | grep "wg0") ]]; then
+    echo '  '
 else
-    echo '   Not connected'
+    echo ''
 fi

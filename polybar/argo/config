@@ -1,9 +1,13 @@
+[global/wm]
+margin-bottom = -8 
+margin-top = 0
+
 [bar/top]
 monitor = ${env:MONITOR:}
 width = 100%
 height = 32 
 
-background = #282a36
+background = #00282a36
 foreground = #f9f9f9
 
 spacing = 4
@@ -11,46 +15,23 @@ padding-right = 5
 module-margin-left = 3
 module-margin-right = 3
 
-line-size = 2
-line-color = #7b7bbc
+line-size = 3
 
 tray-position = right
 
 wm-restack = bspwm
 
-font-0 = Lato:size=9;1
-font-1 = MaterialIcons:size=13;4
-font-2 = FontAwesome:size=10;2
+font-0 = Lato:size=9
+font-1 = FuraCodeNerdFont:size=10
 
 modules-left = bspwm 
 modules-center = date
 modules-right = wireless-network backlight volume battery
 
-[bar/external_top]
-monitor = eDP1
-width = 100%
-height = 30
-
-background = #282a36
-foreground = #f9f9f9
-
-pacing = 4
-padding-right = 5
-module-margin-left = 3
-module-margin-right = 3
-
-wm-restack = bspwm
-
-font-0 = Lato:size=9;1
-font-1 = MaterialIcons:size=13;4
-font-2 = FontAwesome:size=10;2
-
-modules-left = bspwm
-
 [module/backlight]
 type = internal/xbacklight
 format = <label>
-label = %{F#ff8faa}%{F-}   %percentage%%
+label = %{F#ff8faa} %{F-}  %percentage%%
 
 [module/battery]
 type = internal/battery
@@ -66,7 +47,7 @@ ramp-capacity-1-foreground = #ffac8d
 ramp-capacity-2 = 
 ramp-capacity-2-foreground = #ffcb8d
 ramp-capacity-3 = 
-ramp-capacity-3-foreground = #9b88d9
+ramp-capacity-3-foreground = #97d28b
 ramp-capacity-4 = 
 ramp-capacity-4-foreground = #92b3ea
 
@@ -76,7 +57,7 @@ animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
-animation-charging-foreground = #97d28b
+animation-charging-foreground = #ff8faa
 
 [module/bspwm]
 type = internal/bspwm
@@ -84,10 +65,10 @@ type = internal/bspwm
 ws-icon-0 = term;
 ws-icon-1 = web;
 ws-icon-2 = code;
-ws-icon-3 = design;
+ws-icon-3 = design;
 ws-icon-4 = music;
 ws-icon-5 = chrome;
-ws-icon-default = 
+ws-icon-default = 
 
 pin-workspaces = true
 
@@ -95,29 +76,29 @@ format = <label-state> <label-mode>
 
 label-focused = %icon%
 label-focused-foreground = #ffffff
-label-focused-background = #79a2e7
+label-focused-underline = #79a2e7
 label-focused-font = 3
 label-focused-padding = 5
 
 label-occupied = %icon%
 label-occupied-foreground = #f9f9f9
+label-occupied-underline = #63f9f9f9
 label-occupied-font = 3
 label-occupied-padding = 5
 
 label-urgent = %icon%
-label-urgent-background = #ff8e91
+label-urgent-underline = #ff8e91
 label-urgent-font = 3
 label-urgent-padding = 5
 
 label-empty = %icon%
-label-empty-foreground = #4a4e64
+label-empty-foreground = #63f9f9f9
 label-empty-font = 3
 label-empty-padding = 5
 
 [module/date]
 type = internal/date
 date = %%{F#f9f9f9}%Y-%m-%d%%{F-}  %%{F#f9f9f9}%H:%M%%{F-}
-format-underline = #79a2e7
 
 [module/wireless-network]
 type = internal/network
@@ -125,32 +106,32 @@ interface = wlp2s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-label-connected = %essid%  (%upspeed% . %downspeed%)
-label-disconnected = %{F#ff8e91}%{F-}   %{F#4a4e64}Not connected%{F-}
+label-connected = %essid% (%upspeed% . %downspeed%)
+label-disconnected = %{F#ff8e91}睊%{F-}   %{F#63f9f9f9}Not connected%{F-}
 
-ramp-signal-0 = 
+ramp-signal-0 = 
 ramp-signal-0-foreground = #ff8e91
-ramp-signal-1 = 
+ramp-signal-1 = 
 ramp-signal-1-foreground = #ffac8d
-ramp-signal-2 = 
+ramp-signal-2 = 
 ramp-signal-2-foreground = #ffcb8d
-ramp-signal-3 = 
-ramp-signal-3-foreground = #9b88d9
-ramp-signal-4 = 
+ramp-signal-3 = 
+ramp-signal-3-foreground = #97d28b
+ramp-signal-4 = 
 ramp-signal-4-foreground = #92b3ea
 
 [module/volume]
 type = internal/pulseaudio
 
 format-volume = <ramp-volume> <label-volume>
-label-muted = %{F#ff8e91}%{F-}  %{F#4a4e64}muted%{F-}
+label-muted = %{F#ff8e91}ﱝ %{F-}  %{F#63f9f9f9}muted%{F-}
 
-ramp-volume-0 = 
+ramp-volume-0 = 奄
 ramp-volume-0-foreground = #ff8e91
-ramp-volume-1 = 
+ramp-volume-1 = 奔
 ramp-volume-1-foreground = #ffac8d
-ramp-volume-2 = 
+ramp-volume-2 = 墳
 ramp-volume-2-foreground = #ffcb8d
-ramp-volume-3 = 
+ramp-volume-3 = 墳
 ramp-volume-3-foreground = #92b3ea
 
