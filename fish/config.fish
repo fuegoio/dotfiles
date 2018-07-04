@@ -21,6 +21,7 @@ set blue (set_color -o blue)
 set purple (set_color -o magenta)
 set green (set_color -o cyan)
 set yellow (set_color -o yellow)
+set pink (set_color -o white)
 set normal (set_color normal)
 
 set -U fish_greeting "$blue $normal Welcome to Argo. Go faire du sale."
@@ -67,12 +68,12 @@ function fish_right_prompt
   set -l cwd $purple (prompt_pwd)
 
   if [ (_git_branch_name) ]
-    set git_branch "$blue  " (_git_branch_name)
+    set git_branch "$pink  " (_git_branch_name)
     if [ (_is_git_not_pushed) ]
       set git_not_pushed "$green  "
     end
     if [ (_is_git_dirty) ]
-      set git_dirty "$red  "
+      set git_dirty "$yellow  "
     end
   end
 
