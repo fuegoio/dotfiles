@@ -52,8 +52,8 @@ ln -s $(pwd)/vim/.vim ~/.vim
 sudo rm -f /etc/sddm.conf
 sudo cp $(pwd)/sddm/sddm.conf /etc/sddm.conf
 
-sudo rm -rf /usr/share/sddm/themes/clairvoyance
-sudo cp -r $(pwd)/sddm/clairvoyance /usr/share/sddm/themes/clairvoyance
+sudo rm -rf /usr/share/sddm/themes/firark
+sudo cp -r $(pwd)/sddm/firark /usr/share/sddm/themes/firark
 
 sudo rm -f /etc/vconsole.conf
 sudo ln -s $(pwd)/system/vconsole.conf /etc/vconsole.conf

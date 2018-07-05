@@ -16,43 +16,43 @@ URxvt*skipScroll:               false
 URxvt*urgentOnBell:             true
 URxvt*scrollstyle:              plain
 
-#define space0 #282a36
-#define space1 #343746
-#define space2 #3e4154
-#define space3 #4a4e64
-#define space4 #e9e9e9
-#define space5 #efefef
-#define space6 #f9f9f9
-#define space7 #92b3ea
-#define space8 #a796de
-#define space9 #79a2e7
-#define space10 #9b88d9
-#define space11 #ff8e91
-#define space12 #ffac8d
-#define space13 #ffcb8d
-#define space14 #97d28b
-#define space15 #ff8faa
+#define firark0 #282a36
+#define firark1 #343746
+#define firark2 #3e4154
+#define firark3 #4a4e64
+#define firark4 #e9e9e9
+#define firark5 #efefef
+#define firark6 #f9f9f9
+#define firark7 #92b3ea
+#define firark8 #a796de
+#define firark9 #79a2e7
+#define firark10 #9b88d9
+#define firark11 #ff8e91
+#define firark12 #ffac8d
+#define firark13 #ffcb8d
+#define firark14 #97d28b
+#define firark15 #ff8faa
 
-URxvt*.foreground:   space4
-URxvt*.background:   space0
-URxvt*.cursorColor:  space4
-URxvt*.cursorColor2:  space4
-URxvt*.colorBD:  space4
-URxvt*.colorUL:  space4
+URxvt*.foreground:   firark4
+URxvt*.background:   firark0
+URxvt*.cursorColor:  firark4
+URxvt*.cursorColor2:  firark4
+URxvt*.colorBD:  firark4
+URxvt*.colorUL:  firark4
 
-*.color0: space1
-*.color1: space11
-*.color2: space7
-*.color3: space10
-*.color4: space7
-*.color5: space8
-*.color6: space4
-*.color7: space12
-*.color8: space3
-*.color9: space11
-*.color10: space7
-*.color11: space13
-*.color12: space7
-*.color13: space8
-*.color14: space14
-*.color15: space15
+*.color0: firark1
+*.color1: firark11
+*.color2: firark7
+*.color3: firark10
+*.color4: firark7
+*.color5: firark8
+*.color6: firark4
+*.color7: firark12
+*.color8: firark3
+*.color9: firark11
+*.color10: firark7
+*.color11: firark13
+*.color12: firark7
+*.color13: firark8
+*.color14: firark14
+*.color15: firark15

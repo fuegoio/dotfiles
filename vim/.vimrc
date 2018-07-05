@@ -33,9 +33,9 @@ imap ;; <Esc>
 map ;; <Esc>
 set pyxversion=3
 
-let g:space_italic = 1
-let g:space_italic_comments = 1
-colorscheme space
+let g:firark_italic = 1
+let g:firark_italic_comments = 1
+colorscheme firark
 
 let mapleader = ","
 let maplocalleader = "\\"
@@ -45,7 +45,7 @@ if empty(v:servername) && exists('*remote_startserver')
 endif
 
 let g:lightline = {
-            \ 'colorscheme': 'space',
+            \ 'colorscheme': 'firark',
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ],
             \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
