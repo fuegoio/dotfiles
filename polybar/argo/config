@@ -76,7 +76,7 @@ format = <label-state> <label-mode>
 
 label-focused = %icon%
 label-focused-foreground = #ffffff
-label-focused-underline = #79a2e7
+label-focused-underline = #4a4e64
 label-focused-font = 3
 label-focused-padding = 5
 

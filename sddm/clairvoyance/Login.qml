@@ -126,7 +126,7 @@ Item {
 
       color: "white"
       font {
-        family: "FiraMono"
+        family: "Lato"
         pointSize: 20
       }
       text: loginFrame.name

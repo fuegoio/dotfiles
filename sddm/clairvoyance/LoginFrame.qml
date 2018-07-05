@@ -23,7 +23,7 @@ Item {
     anchors.horizontalCenter: parent.horizontalCenter
     y: 0
     color: "white"
-    font.family: "FiraMono"
+    font.family: "Lato"
     style: Text.Raised;
     styleColor: "#4DFFFFFF"
     font.pointSize: 20
