@@ -32,9 +32,18 @@ And more than that, I use for code :
 
 ## Visual
 
-Here is what I use for the visual :
+Here is what I use for the visual of the theme :
 
 * Arc Theme modified
 * Arc Icon Theme
 * Moka Icon Theme
 * Firark colors
+
+## Fonts
+
+They are also important :
+
+* Lato for titles
+* Raleway for subtitles
+* Fura Code from Nerd Fonts in the terminal and as monospaced font
+
