@@ -34,10 +34,11 @@ And more than that, I use for code :
 
 Here is what I use for the visual of the theme :
 
+* Firark colors
 * Arc Theme modified
 * Arc Icon Theme
 * Moka Icon Theme
-* Firark colors
+* Clairvoyance SDDM theme modified
 
 ## Fonts
 
