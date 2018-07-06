@@ -1,10 +1,14 @@
-# Fuego's dotfiles
+![banner](./assets/banner.png)
 
-Here are my dotfiles, with a `deploy.sh` script that creates a symlink between this repository and various location in the user's home.
+**FirarkEnv** are the dotfiles I currently use, with several themes forked and developped under the brand *Firark*.
 
-![screen](https://i.imgur.com/FR9qix1.png)
+![screen](./assets/screen.png)
 
-> Be careful with the Pycharm theme, that may be broken if the version doesn't match
+Everything is made to be consistent accross applications and devices. I use the *Firark colors* everywhere, that I designed as follow :
+
+![colors](./assets/colors.png)
+
+Installation can be easily managed with the `deploy.sh` script.
 
 ## Apps
 
@@ -17,33 +21,20 @@ Here are my dotfiles, with a `deploy.sh` script that creates a symlink between t
 * Sxhkd for the hotkeys daemon
 * Urxvt for the term
 * Rofi for the menu
+* i3lock with a custom script for the lock
 * Sddm for the Display manager
-* i3lock for the lock
 * Plymouth for the boot screen
 
 And more than that, I use for code :
 
 * Vim
 * Pycharm
-* Sublime Text 3
 
 ## Visual
 
 Here is what I use for the visual :
 
-* Arc Theme
+* Arc Theme modified
 * Arc Icon Theme
-* Arc KDE, with kvantum-qt5, for Qt
 * Moka Icon Theme
-* DMZ Xcursor
-
-## Configuration
-
-A lot of things has to be installed, from official repos or from AUR for example (or git), in order to be fully fonctionnal :
-
-* Font awesome
-* Material Icons
-* Meslo
-* Powerline fonts
-* Fira Code with Ligatures
-* plymouth-theme-arch-charge-big
+* Firark colors
