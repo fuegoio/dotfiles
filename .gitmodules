@@ -1,48 +1,48 @@
-[submodule "vim/.vim/bundle/vim-javascript"]
-	path = vim/.vim/bundle/vim-javascript
+[submodule "config/vim/bundle/vim-javascript"]
+	path = config/vim/bundle/vim-javascript
 	url = " https://github.com/pangloss/vim-javascript.git"
-[submodule "vim/.vim/bundle/vim-json"]
-	path = vim/.vim/bundle/vim-json
+[submodule "config/vim/bundle/vim-json"]
+	path = config/vim/bundle/vim-json
 	url = " git@github.com:elzr/vim-json.git"
-[submodule "vim/.vim/bundle/vim-jsx"]
-	path = vim/.vim/bundle/vim-jsx
+[submodule "config/vim/bundle/vim-jsx"]
+	path = config/vim/bundle/vim-jsx
 	url = " https://github.com/mxw/vim-jsx.git"
-[submodule "vim/.vim/bundle/vim-polyglot"]
-	path = vim/.vim/bundle/vim-polyglot
+[submodule "config/vim/bundle/vim-polyglot"]
+	path = config/vim/bundle/vim-polyglot
 	url = " git@github.com:sheerun/vim-polyglot.git"
-[submodule "vim/.vim/bundle/vim-pythonsense"]
-	path = vim/.vim/bundle/vim-pythonsense
+[submodule "config/vim/bundle/vim-pythonsense"]
+	path = config/vim/bundle/vim-pythonsense
 	url = " git@github.com:jeetsukumaran/vim-pythonsense.git"
-[submodule "vim/.vim/bundle/vim-vue"]
-	path = vim/.vim/bundle/vim-vue
+[submodule "config/vim/bundle/vim-vue"]
+	path = config/vim/bundle/vim-vue
 	url = " https://github.com/posva/vim-vue.git"
-[submodule "vim/.vim/bundle/vimtex"]
-	path = vim/.vim/bundle/vimtex
+[submodule "config/vim/bundle/vimtex"]
+	path = config/vim/bundle/vimtex
 	url = " git@github.com:lervag/vimtex.git"
-[submodule "vim/.vim/bundle/YouCompleteMe"]
-	path = vim/.vim/bundle/YouCompleteMe
+[submodule "config/vim/bundle/YouCompleteMe"]
+	path = config/vim/bundle/YouCompleteMe
 	url = " git@github.com:Valloric/YouCompleteMe.git"
-[submodule "vim/.vim/bundle/ale"]
-	path = vim/.vim/bundle/ale
+[submodule "config/vim/bundle/ale"]
+	path = config/vim/bundle/ale
 	url = " git@github.com:w0rp/ale.git"
-[submodule "vim/.vim/bundle/fzf.vim"]
-	path = vim/.vim/bundle/fzf.vim
+[submodule "config/vim/bundle/fzf.vim"]
+	path = config/vim/bundle/fzf.vim
 	url = " git@github.com:junegunn/fzf.vim.git"
-[submodule "vim/.vim/bundle/lightline.vim"]
-	path = vim/.vim/bundle/lightline.vim
+[submodule "config/vim/bundle/lightline.vim"]
+	path = config/vim/bundle/lightline.vim
 	url = " https://github.com/itchyny/lightline.vim"
-[submodule "vim/.vim/bundle/nerdcommenter"]
-	path = vim/.vim/bundle/nerdcommenter
+[submodule "config/vim/bundle/nerdcommenter"]
+	path = config/vim/bundle/nerdcommenter
 	url = " https://github.com/scrooloose/nerdcommenter.git"
-[submodule "vim/.vim/bundle/nerdtree"]
-	path = vim/.vim/bundle/nerdtree
+[submodule "config/vim/bundle/nerdtree"]
+	path = config/vim/bundle/nerdtree
 	url = " https://github.com/scrooloose/nerdtree"
-[submodule "vim/.vim/bundle/vim-fugitive"]
-	path = vim/.vim/bundle/vim-fugitive
+[submodule "config/vim/bundle/vim-fugitive"]
+	path = config/vim/bundle/vim-fugitive
 	url = " https://github.com/tpope/vim-fugitive.git"
-[submodule "vim/.vim/bundle/vim-gitgutter"]
-	path = vim/.vim/bundle/vim-gitgutter
+[submodule "config/vim/bundle/vim-gitgutter"]
+	path = config/vim/bundle/vim-gitgutter
 	url = " git://github.com/airblade/vim-gitgutter.git"
-[submodule "vim/.vim/bundle/vim-markdown"]
-	path = vim/.vim/bundle/vim-markdown
+[submodule "config/vim/bundle/vim-markdown"]
+	path = config/vim/bundle/vim-markdown
 	url = " git@github.com:plasticboy/vim-markdown.git"

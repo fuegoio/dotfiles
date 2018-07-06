@@ -1,7 +1,4 @@
-fish/fishd.*
-fish/fish_history
+config/fish/fishd.*
+config/fish/fish_history
 
 .cache/
-
-vim/.vim/swap
-vim/.vim/.netrwhist
