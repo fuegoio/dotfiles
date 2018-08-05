@@ -1,14 +1,14 @@
-![banner](./assets/banner.png)
+<img src="assets/logo.png" width=25% align="right" /> 
 
-**FirarkEnv** are the dotfiles I currently use, with several themes forked and developped under the brand *Firark*.
+# Firark dotfiles
 
-![screen](./assets/screen.png)
-
-Everything is made to be consistent accross applications and devices. I use the *Firark colors* everywhere, that I designed as follow :
-
-![colors](./assets/colors.png)
+Here are my dotfiles. Everything is made to be consistent accross applications and devices. I use the *Firark colors* everywhere, that you can find here : [https://github.com/alxkt/firark-colors](https://github.com/alxkt/firark-colors).
 
 Installation can be easily managed with the `deploy.sh` script.
+
+More pictures can be found on [Imgur](https://imgur.com/gallery/Gpaiamv).
+
+![screen](./assets/screen.png)
 
 ## Apps
 

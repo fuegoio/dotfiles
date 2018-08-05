@@ -143,4 +143,5 @@ nnoremap <leader>g :YcmCompleter GoTo<CR>
 let g:ycm_python_binary_path = 'python'
 
 let g:tex_flavor = 'latex'
+let g:vimtex_compiler_engine = 'xelatex'
 let g:vimtex_view_method = 'zathura'
