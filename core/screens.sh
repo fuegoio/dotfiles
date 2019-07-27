@@ -3,18 +3,31 @@
 extern=HDMI1
 intern=eDP1
 
-if xrandr | grep "$extern disconnected"; then
+bspc monitor $intern -n $intern
+
+if xrandr | grep -q "$extern disconnected"; then
     mons -o
-    bspc monitor $intern -n $intern -d term web code chrome design other1 other2 music
+    bspc monitor $intern -o term web code chrome git design other1 music
+    bspc monitor $intern -n $intern -d term web code chrome git design other1 music
     bspc monitor $extern -r
     bspc desktop -f term
 else
-    mons -s
+    $HOME/.core/dual_screen.sh
+    bspc monitor $extern -n $extern
+    bspc desktop term -m $extern
+    bspc desktop code -m $extern
+    bspc desktop chrome -m $extern
+    bspc desktop design -m $extern
+    bspc desktop other1 -m $extern
+    bspc desktop other2 -m $extern
     bspc desktop Desktop -r
-    bspc monitor $extern -n $extern -d term web code chrome design other1 other2 music
-    bspc monitor $intern -r
+    bspc monitor $extern -d term code chrome design other1 other2 other3
+    bspc monitor $intern -d web git music other4
     bspc desktop -f term
 fi
 
+bspc wm -o
+
 feh --bg-scale ~/Pictures/wallpaper.png &
 $HOME/.config/polybar/start.sh
+

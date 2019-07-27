@@ -26,7 +26,6 @@ bspc rule -a Nightly:Navigator state=tiled
 
 export QT_QPA_PLATFORMTHEME=gtk2
 export _JAVA_AWT_WM_NONREPARENTING=1
-export LD_PRELOAD="/home/fuego/.local/share/Steam/ubuntu12_32/steam-runtime/amd64/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0"
 
 sxhkd &
 dunst &
@@ -34,5 +33,5 @@ dunst &
 killall redshift &> /dev/null
 redshift &> /dev/null &
 
+compton --config "$HOME/.config/compton/compton.conf" -b &
 $HOME/.core/screens.sh 
-compton --config "$HOME/.config/compton/compton.conf" -b

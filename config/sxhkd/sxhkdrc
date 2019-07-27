@@ -14,7 +14,7 @@ XF86AudioMute
 XF86Audio{Raise,Lower}Volume
     amixer set Master {5%+,5%-} unmute
 
-XF86Audio{Play,Stop,Next,Prev}
+XF86Audio{Play,Pause,Next,Prev}
     dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Stop,Next,Previous}
 
 # terminal emulator
@@ -32,12 +32,14 @@ ctrl + alt + Escape
 super + Escape
 	pkill -USR1 -x sxhkd
 
-super + e ; {f,e,m,i}
-	{firefox-nightly,nautilus,spotify,inkscape}
+super + e ; {f,e,m,p,c,s,g,k}
+	{firefox-nightly,pcmanfm,spotify,pycharm,chromium,postman,gitkraken,keepassxc}
 
 super + i 
 	~/.core/lock.sh	
 
+super + ctrl + s
+   ~/.core/screens.sh 
 #
 # bspwm hotkeys
 #
@@ -114,7 +116,7 @@ super + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
+super + alt + ctrl + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating windowu

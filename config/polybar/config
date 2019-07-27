@@ -28,6 +28,32 @@ modules-left = bspwm
 modules-center = date
 modules-right = wireless-network backlight volume battery
 
+[bar/external_top]
+monitor = ${env:MONITOR:}
+width = 100%
+height = 32 
+
+background = #00282a36
+foreground = #f9f9f9
+
+spacing = 4
+padding-right = 5
+module-margin-left = 3
+module-margin-right = 3
+
+line-size = 3
+
+tray-position = right
+
+wm-restack = bspwm
+
+font-0 = Lato:size=9
+font-1 = FuraCodeNerdFont:size=10
+
+modules-left = bspwm 
+modules-center = date
+modules-right = wireless-network backlight volume battery
+
 [module/backlight]
 type = internal/xbacklight
 format = <label>
@@ -68,6 +94,7 @@ ws-icon-2 = code;
 ws-icon-3 = design;
 ws-icon-4 = music;
 ws-icon-5 = chrome;
+ws-icon-6 = git;
 ws-icon-default = 
 
 pin-workspaces = true

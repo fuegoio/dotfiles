@@ -1,20 +1,21 @@
-abbr gs="git status"
-abbr gcm="git commit -m"
-abbr ga="git add"
-abbr gp="git push"
-abbr gm="git merge"
-
-abbr dk="docker"
-abbr dco="docker-compose"
+abbr -a -U -- dco docker-compose
+abbr -a -U -- dk docker
+abbr -a -U -- ga 'git add'
+abbr -a -U -- gcm 'git commit -m'
+abbr -a -U -- gm 'git merge'
+abbr -a -U -- go 'git checkout'
+abbr -a -U -- gp 'git push'
+abbr -a -U -- gs 'git status'
 
 alias screens="/home/fuego/.core/screens.sh"
 alias vpnon="sudo wg-quick up wg0"
 alias vpnoff="sudo wg-quick down wg0"
+alias dvorak="setxkbmap -variant dvorak -layout us"
 
 set -x EDITOR vim
 set -gx ANDROID_HOME $HOME/Android/Sdk
 set -gx npm_config_prefix $HOME/.node_modules
-set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.node_modules/bin
+set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.node_modules/bin $HOME/.hellofresh
 
 set red (set_color -o red)
 set blue (set_color -o blue)
@@ -23,6 +24,17 @@ set green (set_color -o cyan)
 set yellow (set_color -o yellow)
 set pink (set_color -o white)
 set normal (set_color normal)
+
+function versionup
+    git tag v$argv[2] --force
+    git push --tags --force
+    docker build -t $argv[1]:$argv[2] .
+    docker tag $argv[1]:$argv[2] 532495396307.dkr.ecr.ap-southeast-2.amazonaws.com/$argv[1]:$argv[2]
+    docker tag $argv[1]:$argv[2] 532495396307.dkr.ecr.ap-southeast-2.amazonaws.com/$argv[1]:latest
+    aws ecr get-login --no-include-email | sh
+    docker push 532495396307.dkr.ecr.ap-southeast-2.amazonaws.com/$argv[1]:$argv[2]
+    docker push 532495396307.dkr.ecr.ap-southeast-2.amazonaws.com/$argv[1]:latest
+end
 
 set -U fish_greeting "$blue $normal Welcome to Argo. Go faire du sale."
 

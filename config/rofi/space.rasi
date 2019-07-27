@@ -23,8 +23,7 @@ window {
 
 mainbox {
    background-color: @blackdarkest;
-   spacing:0px;
-   children: [inputbar, message, sidebar, listview];
+   spacing: 0px;
 }
 
 message {
