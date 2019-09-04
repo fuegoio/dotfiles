@@ -1,7 +1,14 @@
 #! /bin/sh
 
-extern=HDMI1
-intern=eDP1
+# Intel drivers
+extern="HDMI1"
+intern="eDP1"
+
+# NVIDIA drivers
+if xrandr | grep -q "HDMI-1-1"; then
+    extern="HDMI-1-1"
+    intern="eDP-1-1"
+fi
 
 bspc monitor $intern -n $intern
 
