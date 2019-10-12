@@ -59,7 +59,7 @@ do
     ## if cache for that screensize doesnt exist
     if ! [ -e $CACHE_IMG ]
     then
-  # Create image for that screensize
+    # Create image for that screensize
         eval convert '$BKG_IMG' '-resize' '${SCREEN_WIDTH}X${SCREEN_HEIGHT}^' '-gravity' 'Center' '-crop' '${SCREEN_WIDTH}X${SCREEN_HEIGHT}+0+0' '+repage' '$CACHE_IMG'
     fi
 

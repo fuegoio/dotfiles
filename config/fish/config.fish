@@ -25,17 +25,6 @@ set yellow (set_color -o yellow)
 set pink (set_color -o white)
 set normal (set_color normal)
 
-function versionup
-    git tag v$argv[2] --force
-    git push --tags --force
-    docker build -t $argv[1]:$argv[2] .
-    docker tag $argv[1]:$argv[2] 532495396307.dkr.ecr.ap-southeast-2.amazonaws.com/$argv[1]:$argv[2]
-    docker tag $argv[1]:$argv[2] 532495396307.dkr.ecr.ap-southeast-2.amazonaws.com/$argv[1]:latest
-    aws ecr get-login --no-include-email | sh
-    docker push 532495396307.dkr.ecr.ap-southeast-2.amazonaws.com/$argv[1]:$argv[2]
-    docker push 532495396307.dkr.ecr.ap-southeast-2.amazonaws.com/$argv[1]:latest
-end
-
 set -U fish_greeting "$blue $normal Welcome to Argo. Go faire du sale."
 
 fish_vi_key_bindings insert
