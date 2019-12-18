@@ -33,5 +33,5 @@ dunst &
 killall redshift &> /dev/null
 redshift &> /dev/null &
 
-compton --config "$HOME/.config/compton/compton.conf" -b &
+picom --config "$HOME/.config/picom/picom.conf" -b &
 $HOME/.core/screens.sh 

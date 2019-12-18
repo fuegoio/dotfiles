@@ -3,8 +3,8 @@
 rm -rf ~/.config/bspwm
 ln -s $(pwd)/config/bspwm ~/.config/bspwm
 
-rm -rf ~/.config/compton
-ln -s $(pwd)/config/compton ~/.config/compton
+rm -rf ~/.config/picom
+ln -s $(pwd)/config/picom ~/.config/picom
 
 rm -rf ~/.core
 ln -s $(pwd)/core ~/.core

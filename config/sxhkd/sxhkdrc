@@ -84,9 +84,6 @@ super + {grave,Tab}
 super + {_,alt + }{g,t,n,s}
 	bspc {desktop -f,node -d} '{term,web,code,chrome}'
 
-super + {shift +,shift + alt + }{g,t,n,s}
-	bspc {desktop -f,node -d} '{design,other1,other2,music}'
-
 #
 # preselect
 #
