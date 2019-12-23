@@ -19,11 +19,11 @@ XF86Audio{Play,Pause,Next,Prev}
 
 # terminal emulator
 super + Return
-	urxvt
+    urxvt
 
 # program launcher
-super + space
-    rofi -show run
+super + space; {space, p, s}
+    {~/.core/appsmenu,~/.core/powermenu,~/.core/scrotmenu}
 
 ctrl + alt + Escape
     scrot -s
@@ -36,10 +36,10 @@ super + e ; {f,e,m,p,c,s,g,k}
 	{firefox-nightly,pcmanfm,spotify,pycharm,chromium,postman,gitkraken,keepassxc}
 
 super + i 
-	~/.core/lock.sh	
+    ~/.core/lock
 
 super + ctrl + s
-   ~/.core/screens.sh 
+    ~/.core/screens
 #
 # bspwm hotkeys
 #
