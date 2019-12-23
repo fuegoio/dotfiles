@@ -34,4 +34,4 @@ killall redshift &> /dev/null
 redshift &> /dev/null &
 
 picom --config "$HOME/.config/picom/picom.conf" -b &
-$HOME/.core/screens.sh 
+$HOME/.core/screens
