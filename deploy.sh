@@ -18,6 +18,9 @@ ln -s $(pwd)/config/fish ~/.config/fish
 rm -rf ~/.config/rofi
 ln -s $(pwd)/config/rofi ~/.config/rofi
 
+rm -rf ~/.config/termite
+ln -s $(pwd)/config/termite ~/.config/termite
+
 rm -rf ~/.themes
 ln -s $(pwd)/colors/themes ~/.themes
 

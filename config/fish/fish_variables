@@ -30,7 +30,7 @@ SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
-SETUVAR fish_greeting:\ue780\x20\x20Welcome\x20to\x20Argo\x2e\x20Go\x20faire\x20du\x20sale\x2e
+SETUVAR fish_greeting:\x1b\x5b1m\x1b\x5b34m\ue780\x20\x1b\x5b30m\x1b\x28B\x1b\x5bm\x20Welcome\x20to\x20Argo\x2e\x20Go\x20faire\x20du\x20sale\x2e
 SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline

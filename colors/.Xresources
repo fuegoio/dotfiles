@@ -1,21 +1,6 @@
 Xft.dpi:                        96
 Xft.antialias:                  true
 
-URxvt*termName:                 xterm-256color
-URxvt*font:                     xft:FuraCode Nerd Font:pixelsize=12:antialias=true
-URxvt*depth:                    32
-URxvt*lineSpace:                1
-URxvt*letterSpace:              -0.5
-URxvt*scrollBar:                false
-URxvt*internalBorder:           28
-URxvt*buffered:                 true
-URxvt*saveLines:                9999
-URxvt*hold:                     false
-URxvt*jumpScroll:               false
-URxvt*skipScroll:               false
-URxvt*urgentOnBell:             true
-URxvt*scrollstyle:              plain
-
 #define firark0 #282a36
 #define firark1 #343746
 #define firark2 #3e4154
@@ -32,13 +17,6 @@ URxvt*scrollstyle:              plain
 #define firark13 #ffcb8d
 #define firark14 #97d28b
 #define firark15 #ff8faa
-
-URxvt*.foreground:   firark4
-URxvt*.background:   firark0
-URxvt*.cursorColor:  firark4
-URxvt*.cursorColor2:  firark4
-URxvt*.colorBD:  firark4
-URxvt*.colorUL:  firark4
 
 *.color0: firark1
 *.color1: firark11

@@ -19,7 +19,7 @@ XF86Audio{Play,Pause,Next,Prev}
 
 # terminal emulator
 super + Return
-    urxvt
+    termite
 
 # program launcher
 super + space; {space, p, s}
