@@ -94,8 +94,9 @@ ws-icon-2 = code;
 ws-icon-3 = design;
 ws-icon-4 = music;
 ws-icon-5 = chrome;
-ws-icon-6 = git;
+ws-icon-6 = notes;
 ws-icon-7 = mail;
+ws-icon-8 = slack;
 ws-icon-default = 
 
 pin-workspaces = true

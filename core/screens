@@ -14,8 +14,8 @@ bspc monitor $intern -n $intern
 
 if xrandr | grep -q "$extern disconnected"; then
     mons -o
-    bspc monitor $intern -o term web code chrome git design mail other1 music
-    bspc monitor $intern -n $intern -d term web code chrome git design mail other1 music
+    bspc monitor $intern -o term web code chrome notes design slack other1 music
+    bspc monitor $intern -n $intern -d term web code chrome notes design slack other1 music
     bspc monitor $extern -r
     bspc desktop -f term
 else
@@ -30,7 +30,7 @@ else
     bspc desktop other2 -m $extern
     bspc desktop Desktop -r
     bspc monitor $extern -d term web code chrome design other1 other2 other3
-    bspc monitor $intern -d git mail music other4
+    bspc monitor $intern -d notes slack music other4
     bspc desktop -f term
 fi
 
