@@ -32,8 +32,8 @@ ctrl + alt + Escape
 super + Escape
 	pkill -USR1 -x sxhkd
 
-super + e ; {f,e,m,p,c,s,g,k}
-	{firefox-nightly,pcmanfm,spotify,pycharm,chromium,postman,gitkraken,keepassxc}
+super + e ; {f,e,m,p,c,n,g,k,i}
+	{firefox-nightly,pcmanfm,spotify,pycharm,chromium,notion-app,gitkraken,keepassxc,insomnia}
 
 super + i 
     ~/.core/lock
