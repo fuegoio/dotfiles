@@ -14,23 +14,14 @@ bspc monitor $intern -n $intern
 
 if xrandr | grep -q "$extern disconnected"; then
     mons -o
-    bspc monitor $intern -o term web code chrome notes design slack other1 music
     bspc monitor $intern -n $intern -d term web code chrome notes design slack other1 music
     bspc monitor $extern -r
     bspc desktop -f term
 else
-    $HOME/.core/dual_screen.sh
-    bspc monitor $extern -n $extern
-    bspc desktop term -m $extern
-    bspc desktop web -m $extern
-    bspc desktop code -m $extern
-    bspc desktop chrome -m $extern
-    bspc desktop design -m $extern
-    bspc desktop other1 -m $extern
-    bspc desktop other2 -m $extern
+    mons -s
     bspc desktop Desktop -r
-    bspc monitor $extern -d term web code chrome design other1 other2 other3
-    bspc monitor $intern -d notes slack music other4
+    bspc monitor $extern -n $extern -d term web code chrome notes design slack other1 music
+    bspc monitor $intern -r
     bspc desktop -f term
 fi
 

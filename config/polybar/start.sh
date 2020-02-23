@@ -20,16 +20,15 @@ bspc config -m $intern top_padding 5
 
 if xrandr | grep "$extern connected"; then
     MONITOR=$extern polybar top &
-    MONITOR=$intern polybar external_top &
     sleep 2
     bspc config -m $extern right_padding 5
     bspc config -m $extern bottom_padding 5
 else
     MONITOR=$intern polybar top &
+    sleep 2
+    bspc config -m $intern right_padding 5
+    bspc config -m $intern bottom_padding 5
 fi
 
 echo "Bars launched..."
-sleep 2
-bspc config -m $intern right_padding 5
-bspc config -m $intern bottom_padding 5
 
