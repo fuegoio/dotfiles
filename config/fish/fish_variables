@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
+SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_dco:docker\x2dcompose
 SETUVAR _fish_abbr_dk:docker
 SETUVAR _fish_abbr_ga:git\x20add
@@ -20,6 +21,7 @@ SETUVAR fish_color_error:brred
 SETUVAR fish_color_escape:bryellow\x1e\x2d\x2dbold
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:bryellow
@@ -28,6 +30,7 @@ SETUVAR fish_color_quote:yellow
 SETUVAR fish_color_redirection:brblue
 SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
 SETUVAR fish_greeting:\ue780\x20\x20Welcome\x20to\x20Argo\x2e\x20Go\x20faire\x20du\x20sale\x2e

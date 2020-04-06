@@ -26,7 +26,7 @@ font-1 = FuraCodeNerdFont:size=10
 
 modules-left = bspwm 
 modules-center = date
-modules-right = wireless-network backlight volume battery
+modules-right = mouse vpn wireless-network backlight volume battery
 
 [bar/external_top]
 monitor = ${env:MONITOR:}
@@ -168,3 +168,16 @@ ramp-volume-2-foreground = #ffcb8d
 ramp-volume-3 = 墳
 ramp-volume-3-foreground = #92b3ea
 
+[module/vpn]
+type = custom/script
+exec = curl -s ifconfig.co
+interval = 10
+format-prefix = "    "
+format-prefix-foreground = #92b3ea
+
+[module/mouse]
+type = custom/script
+exec = solaar show | grep "Battery" | sed -n -e 's/\s*Battery: \(.*mV\).*/\1/p'
+interval = 10
+format-prefix = "    "
+format-prefix-foreground = #9b88d9
