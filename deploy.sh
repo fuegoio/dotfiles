@@ -33,9 +33,6 @@ ln -s $(pwd)/colors/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
 rm -rf ~/.config/polybar
 ln -s $(pwd)/config/polybar ~/.config/polybar
 
-rm -f ~/.ssh/config
-ln -s $(pwd)/config/ssh/config ~/.ssh/config 
-
 rm -rf ~/.config/sxhkd
 ln -s $(pwd)/config/sxhkd ~/.config/sxhkd
 

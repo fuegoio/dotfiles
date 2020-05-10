@@ -14,7 +14,7 @@ alias dvorak="setxkbmap -variant dvorak -layout us"
 set -x EDITOR vim
 set -gx ANDROID_HOME $HOME/Android/Sdk
 set -gx npm_config_prefix $HOME/.node_modules
-set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.node_modules/bin $HOME/.core $HOME/.hellofresh
+set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.node_modules/bin $HOME/.core $HOME/.poetry/bin
 
 set red (set_color -o red)
 set blue (set_color -o blue)

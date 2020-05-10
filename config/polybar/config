@@ -7,7 +7,7 @@ monitor = ${env:MONITOR:}
 width = 100%
 height = 34
 
-background = #ff282a36
+background = #00282a36
 foreground = #f9f9f9
 
 spacing = 4
@@ -171,14 +171,14 @@ ramp-volume-3-foreground = #92b3ea
 [module/vpn]
 type = custom/script
 exec = curl -s ifconfig.co
-interval = 30
+interval = 60
 format-prefix = "    "
 format-prefix-foreground = #92b3ea
 
 [module/mouse]
 type = custom/script
-exec = solaar show | grep "Battery" | sed -n -e 's/\s*Battery: \(.*mV\).*/\1/p'
-exec-if = solaar show | grep "Discharging"
-interval = 30
+exec = python ~/.core/mouse.py
+exec-if = python ~/.core/mouse.py | grep '%'
+interval = 60
 format-prefix = "    "
 format-prefix-foreground = #9b88d9
