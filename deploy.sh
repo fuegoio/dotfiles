@@ -51,12 +51,6 @@ ln -s $(pwd)/colors/vim ~/.vim/colors
 
 # Sudo part
 
-sudo rm -f /etc/sddm.conf
-sudo cp $(pwd)/boot/sddm/sddm.conf /etc/sddm.conf
-
-sudo rm -rf /usr/share/sddm/themes/firark
-sudo cp -r $(pwd)/boot/sddm/firark /usr/share/sddm/themes/firark
-
 sudo rm -f /etc/vconsole.conf
 sudo ln -s $(pwd)/boot/vconsole.conf /etc/vconsole.conf
 
