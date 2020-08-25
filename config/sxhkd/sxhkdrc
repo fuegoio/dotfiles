@@ -3,10 +3,10 @@
 #
 
 XF86MonBrightnessUp
-    xbacklight -inc 5
+    light -A 5
 
 XF86MonBrightnessDown
-    xbacklight -dec 5
+    light -U 5
 
 XF86AudioMute
     amixer set Master toggle

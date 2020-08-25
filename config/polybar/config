@@ -4,10 +4,12 @@ margin-top = 0
 
 [bar/top]
 monitor = ${env:MONITOR:}
-width = 100%
+width = 98%
+offset-x = 1%
+offset-y = 10
 height = 34
 
-background = #00282a36
+background = #282a36
 foreground = #f9f9f9
 
 spacing = 4
@@ -22,7 +24,7 @@ tray-position = right
 wm-restack = bspwm
 
 font-0 = Lato:size=9
-font-1 = FuraCodeNerdFont:size=10
+font-1 = FiraCodeNerdFont:size=10
 
 modules-left = bspwm 
 modules-center = date
@@ -30,10 +32,12 @@ modules-right = mouse vpn wireless-network backlight volume battery
 
 [bar/external_top]
 monitor = ${env:MONITOR:}
-width = 100%
-height = 32 
+width = 98%
+offset-x = 1%
+offset-y = 10
+height = 34
 
-background = #ff282a36
+background = #282a36
 foreground = #f9f9f9
 
 spacing = 4
@@ -48,16 +52,18 @@ tray-position = right
 wm-restack = bspwm
 
 font-0 = Lato:size=9
-font-1 = FuraCodeNerdFont:size=10
+font-1 = FiraCodeNerdFont:size=10
 
 modules-left = bspwm 
 modules-center = date
 modules-right = wireless-network backlight volume battery
 
 [module/backlight]
-type = internal/xbacklight
+type = internal/backlight
+card = intel_backlight
+
 format = <label>
-label = %{F#ff8faa} %{F-}  %percentage%%
+label = %{F#ff8faa} %{F-}    %percentage%%
 
 [module/battery]
 type = internal/battery
@@ -66,15 +72,15 @@ format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
 format-full = <ramp-capacity> <label-full>
 
-ramp-capacity-0 = 
+ramp-capacity-0 = " "
 ramp-capacity-0-foreground = #ff8e91
-ramp-capacity-1 = 
+ramp-capacity-1 = " "
 ramp-capacity-1-foreground = #ffac8d
-ramp-capacity-2 = 
+ramp-capacity-2 = " "
 ramp-capacity-2-foreground = #ffcb8d
-ramp-capacity-3 = 
+ramp-capacity-3 = " "
 ramp-capacity-3-foreground = #97d28b
-ramp-capacity-4 = 
+ramp-capacity-4 = " "
 ramp-capacity-4-foreground = #92b3ea
 
 animation-charging-0 = 
@@ -108,23 +114,23 @@ label-focused-foreground = #ffffff
 label-focused-background = #433c57
 label-focused-underline = #a594d6
 label-focused-font = 3
-label-focused-padding = 5
+label-focused-padding = 6
 
 label-occupied = %icon%
 label-occupied-foreground = #f9f9f9
 label-occupied-underline = #63f9f9f9
 label-occupied-font = 3
-label-occupied-padding = 5
+label-occupied-padding = 6
 
 label-urgent = %icon%
 label-urgent-underline = #ff8e91
 label-urgent-font = 3
-label-urgent-padding = 5
+label-urgent-padding = 6
 
 label-empty = %icon%
 label-empty-foreground = #63f9f9f9
 label-empty-font = 3
-label-empty-padding = 5
+label-empty-padding = 6
 
 [module/date]
 type = internal/date

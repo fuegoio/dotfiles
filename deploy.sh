@@ -44,8 +44,10 @@ ln -s $(pwd)/config/.gitconfig ~/.gitconfig
 
 rm -f ~/.vimrc
 ln -s $(pwd)/config/vim/.vimrc ~/.vimrc
+
 rm -rf ~/.vim/bundle
 ln -s $(pwd)/config/vim/bundle ~/.vim/bundle
+
 rm -rf ~/.vim/colors
 ln -s $(pwd)/colors/vim ~/.vim/colors
 

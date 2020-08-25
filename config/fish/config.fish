@@ -10,6 +10,7 @@ abbr -a -U -- gs 'git status'
 alias vpnon="sudo wg-quick up wg0"
 alias vpnoff="sudo wg-quick down wg0"
 alias dvorak="setxkbmap -variant dvorak -layout us"
+alias git-clean="git branch --merged master | grep -v '\* master' | xargs -n 1 git branch -d"
 
 set -x EDITOR vim
 set -gx ANDROID_HOME $HOME/Android/Sdk

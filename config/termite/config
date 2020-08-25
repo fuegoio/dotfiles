@@ -6,7 +6,7 @@ allow_bold = true
 #cell_width_scale = 1.0
 #clickable_url = true
 #dynamic_title = true
-font = FuraCode Nerd Font Mono 9
+font = FiraCodeNerdFont Mono 9
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -41,35 +41,44 @@ cursor_blink = off
 #scrollbar = off
 
 [colors]
-# 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
 
-# If unset, will reverse foreground and background
-# highlight = #2f2f2f
-
-# If both of these are unset, cursor falls back to the foreground color,
-# and cursor_foreground falls back to the background color.
-foreground      = #e9e9e9
-foreground_bold = #e9e9e9
-cursor          = #e9e9e9
+# special
+foreground      = #f9f9f9
+foreground_bold = #f9f9f9
+cursor          = #f9f9f9
 background      = #282a36
 
-color0  = #343746
+# black
+color0  = #282a36
 color8  = #4a4e64
+
+# red
 color1  = #ff8e91
 color9  = #ff8e91
-color2  = #92b3ea
-color10 = #92b3ea
-color3  = #9b88d9
-color11 = #ffcb8d
-color4  = #92b3ea
-color12 = #92b3ea
-color5  = #a796de
-color13 = #a796de
-color6  = #e9e9e9
-color14 = #97d28b
-color7  = #ffac8d
-color15 = #ff8faa
+
+# green
+color5  = #8ec583
+color13 = #8ec583
+
+# yellow
+color3  = #ffac8d
+color11 = #ffac8d
+
+# blue
+color4  = #79a2e7
+color12 = #79a2e7
+
+# magenta
+color2  = #9b88d9
+color10 = #9b88d9
+
+# cyan
+color6  = #ffcb8d
+color14 = #ffcb8d
+
+# white
+color7  = #959dcb
+color15 = #ffffff
 
 
 [hints]

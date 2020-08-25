@@ -1,9 +1,9 @@
 * {
   /* General */
   text-font:                            "Lato Semi-Bold 11";
-  text-font-mono:                       "FuraCode Nerd Font Regular 14";
-  icon-font:                            "FuraCode Nerd Font Mono 50";
-  icon-font-small:                      "FuraCode Nerd Font Mono 24";
+  text-font-mono:                       "FiraCode Nerd Font Regular 14";
+  icon-font:                            "FiraCode Nerd Font Mono 50";
+  icon-font-small:                      "FiraCode Nerd Font Mono 24";
   inputbar-margin:                      4px 4px;
   prompt-padding:                       16px 20px;
   entry-padding:                        18px 16px 16px 0px;

@@ -12,8 +12,8 @@ More pictures can be found on [Imgur](https://imgur.com/gallery/Gpaiamv).
 
 ## Apps
 
-* Bspwm (v0.9.2 because of the focus click) for the Window Manager
-* Compton for animations
+* Bspwm for the Window Manager
+* Picom for animations (ibhagwan/picom)
 * Dunst for notifications
 * Fish for the shell
 * GTK and QT for windows
@@ -46,5 +46,5 @@ They are also important :
 
 * Lato for titles
 * Raleway for subtitles
-* Fura Code from Nerd Fonts in the terminal and as monospaced font
+* Fira Code from Nerd Fonts in the terminal and as monospaced font
 

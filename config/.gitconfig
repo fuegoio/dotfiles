@@ -5,3 +5,5 @@
 	default = simple
 [credential]
 	helper = cache --timeout=3600
+[core]
+	excludesfile = /home/fuego/.gitignore

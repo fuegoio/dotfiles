@@ -23,7 +23,7 @@ OUTPUT_IMG_HEIGHT=0 # Decide size to cover all screens
 #i3lock command
 LOCK_BASE_CMD="i3lock -n -i $OUTPUT_IMG"
 
-extern=HDMI1
+extern=HDMI-1
 if xrandr | grep "$extern disconnected"; then
   LOCK_POS="1001"
 else
