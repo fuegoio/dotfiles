@@ -7,3 +7,5 @@
 	helper = cache --timeout=3600
 [core]
 	excludesfile = /home/fuego/.gitignore
+[pull]
+	rebase = true

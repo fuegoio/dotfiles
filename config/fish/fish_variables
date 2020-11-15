@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export COMPOSE_DOCKER_CLI_BUILD:1
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_initialized:3100
@@ -11,6 +12,7 @@ SETUVAR _fish_abbr_gm:git\x20merge
 SETUVAR _fish_abbr_go:git\x20checkout
 SETUVAR _fish_abbr_gp:git\x20push
 SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_k:kubectl
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_comment:red

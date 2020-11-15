@@ -81,9 +81,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627418"
-     inkscape:cx="4.6255954"
-     inkscape:cy="10.407616"
+     inkscape:zoom="45.254834"
+     inkscape:cx="12.734727"
+     inkscape:cy="10.911658"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -111,6 +111,10 @@
        orientation="1,0"
        position="12,12"
        id="guide4316" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="12,12"
+       id="guide4318" />
   </sodipodi:namedview>
   <metadata
      id="metadata4311">
@@ -131,78 +135,78 @@
      transform="translate(0,-1028.3622)">
     <g
        style="display:inline"
-       id="titlebutton-min-hover-dark"
+       id="titlebutton-min-hover"
        inkscape:label="#g6308"
        transform="translate(-480,1218)">
       <g
-         id="g4909-3-7"
+         id="g4909"
          style="display:inline;opacity:1"
          transform="translate(-781,-432.63782)">
         <ellipse
            cy="255"
            cx="1273"
-           style="display:inline;opacity:0.45;fill:#5f697f;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="path4068-7-5-9-6-7-2-1-6-1"
+           style="display:inline;opacity:0.95;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path4068-7-5-9-6-7-2-1"
            rx="6"
            ry="6.0000005" />
         <path
-           style="display:inline;opacity:0.37000002;fill:#15171c;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           style="display:inline;opacity:0.15;fill:#525d76;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            d="m 1273,248 a 7,7 0 0 0 -7,7 7,7 0 0 0 7,7 7,7 0 0 0 7,-7 7,7 0 0 0 -7,-7 z m 0,1 a 6,6 0 0 1 6,6 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 z"
-           id="path4068-7-5-9-6-7-2-5-23-4-3"
+           id="path4068-7-5-9-6-7-2-5-23"
            inkscape:connector-curvature="0" />
         <g
            style="display:inline;opacity:1;fill:#c0e3ff;fill-opacity:1"
-           id="g4834-0-4-5"
+           id="g4834-0"
            transform="translate(1265,247)">
           <g
              transform="translate(-81.0002,-967)"
              style="display:inline;fill:#c0e3ff;fill-opacity:1"
              inkscape:label="status"
-             id="layer9-3-4-15-6" />
+             id="layer9-3-4" />
           <g
              transform="translate(-81.0002,-967)"
              inkscape:label="devices"
-             id="layer10-4-1-8-3"
+             id="layer10-4-1"
              style="fill:#c0e3ff;fill-opacity:1" />
           <g
              transform="translate(-81.0002,-967)"
              inkscape:label="apps"
-             id="layer11-2-6-4-9"
+             id="layer11-2-6"
              style="fill:#c0e3ff;fill-opacity:1" />
           <g
              transform="translate(-81.0002,-967)"
              inkscape:label="places"
-             id="layer13-5-4-8-0"
+             id="layer13-5-4"
              style="fill:#c0e3ff;fill-opacity:1" />
           <g
              transform="translate(-81.0002,-967)"
              inkscape:label="mimetypes"
-             id="layer14-6-0-8-2"
+             id="layer14-6-0"
              style="fill:#c0e3ff;fill-opacity:1" />
           <g
              transform="translate(-81.0002,-967)"
              style="display:inline;fill:#c0e3ff;fill-opacity:1"
              inkscape:label="emblems"
-             id="layer15-52-1-7-5" />
+             id="layer15-52-1" />
           <g
              transform="translate(-81.0002,-967)"
              style="display:inline;fill:#c0e3ff;fill-opacity:1"
              inkscape:label="emotes"
-             id="g71291-3-9-9-9" />
+             id="g71291-3-9" />
           <g
              transform="translate(-81.0002,-967)"
              style="display:inline;fill:#c0e3ff;fill-opacity:1"
              inkscape:label="categories"
-             id="g4953-8-2-7-8" />
+             id="g4953-8-2" />
           <g
              transform="translate(-81.0002,-967)"
              style="display:inline;fill:#c0e3ff;fill-opacity:1"
              inkscape:label="actions"
-             id="layer12-45-6-2-7">
+             id="layer12-45-6">
             <path
                sodipodi:nodetypes="ccccc"
-               style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:Sans;-inkscape-font-specification:Sans;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#c4c7cc;fill-opacity:1;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
-               id="rect9057-8-2-3"
+               style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:Sans;-inkscape-font-specification:Sans;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#7a7f8b;fill-opacity:1;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
+               id="rect9057-8"
                d="m 86.0002,974 0,2 6,0 0,-2 z"
                inkscape:connector-curvature="0" />
           </g>
@@ -213,7 +217,7 @@
          x="484"
          height="16"
          width="16"
-         id="rect17883-11-4-0"
+         id="rect17883-11"
          style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
     </g>
   </g>

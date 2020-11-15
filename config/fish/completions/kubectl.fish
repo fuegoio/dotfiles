@@ -150,7 +150,7 @@ set __fish_kubectl_cached_crds ""
 set __fish_kubectl_last_crd_fetch ""
 
 function __fish_kubectl_actually_get_crds
-  set __fish_kubectl_cached_crds (__fish_kubectl get crd -o jsonpath='{range .items[*]}{.spec.names.plural}{"\n"}{.spec.names.singular}{"\n"}{end}')
+  set __fish_kubectl_cached_crds (__fish_kubectl get crd -o jsonpath='{range .items[*]}{.spec.names.plural}{"\n"}{.spec.names.singular}{"\n"}{range .spec.names.shortNames[]}{@}{"\n"}{end}{end}' 2>/dev/null)
   set __fish_kubectl_last_crd_fetch (__fish_kubectl_get_current_time)
 	for i in $__fish_kubectl_cached_crds
 		echo $i
@@ -185,7 +185,7 @@ function __fish_kubectl_seen_subcommand_from_regex
   set -e cmd[1]
   for i in $cmd
     for r in $argv
-      if string match -r $r $i
+      if string match -r -- $r $i
         return 0
       end
     end
@@ -239,11 +239,11 @@ end
 
 function __fish_kubectl_has_partial_resource_match
   set -l last (commandline -opt)
-  if not set -l matches (string match "(.*)/" $last)
+  if not set -l matches (string match -- "(.*)/" $last)
     return
   end
 
-  if string match -q "(.*)/" $last
+  if string match -q -- "(.*)/" $last
     return 0
   end
 
@@ -252,7 +252,7 @@ end
 
 function __fish_kubectl_print_matching_resources
   set -l last (commandline -opt)
-  if not set -l matches (string match -r "(.*)/" $last)
+  if not set -l matches (string match -r -- "(.*)/" $last)
     return
   end
   set -l prefix $matches[2]
@@ -364,7 +364,7 @@ function __fish_kubectl_print_resource -d 'Print a list of resources' -a resourc
   end
 
   set args $args get "$resource"
-  __fish_kubectl $args --no-headers | awk '{print $1}' | string replace -r '(.*)/' ''
+  __fish_kubectl $args --no-headers 2>/dev/null | awk '{print $1}' | string replace -r '(.*)/' ''
 end
 
 function __fish_kubectl_get_config -a type
@@ -382,9 +382,9 @@ function __fish_kubectl_get_rollout_resources
 
   set -l template '{range .items[*]}{.metadata.name}{"\n"}{end}'
 
-  set -l deploys (__fish_kubectl $args get deploy -o jsonpath="$template")
-  set -l daemonsets (__fish_kubectl $args get ds -o jsonpath="$template")
-  set -l sts (__fish_kubectl $args get sts -o jsonpath="$template")
+  set -l deploys (__fish_kubectl $args get deploy -o jsonpath="$template" 2>/dev/null)
+  set -l daemonsets (__fish_kubectl $args get ds -o jsonpath="$template" 2>/dev/null)
+  set -l sts (__fish_kubectl $args get sts -o jsonpath="$template" 2>/dev/null)
 
   for i in $deploys
     echo "deploy/$i"

@@ -1,5 +1,6 @@
 abbr -a -U -- dco docker-compose
 abbr -a -U -- dk docker
+abbr -a -U -- k kubectl
 abbr -a -U -- ga 'git add'
 abbr -a -U -- gcm 'git commit -m'
 abbr -a -U -- gm 'git merge'
@@ -78,5 +79,7 @@ function fish_right_prompt
     end
   end
 
-  echo -n -s $cwd $git_not_pushed $git_dirty $git_branch $normal
+  set -l ctx (kubectl config current-context 2>/dev/null)
+
+  echo -n -s $cwd $git_not_pushed $git_dirty $git_branch $green ' ' $ctx $normal
 end

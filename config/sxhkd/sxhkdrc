@@ -40,6 +40,9 @@ super + i
 
 super + ctrl + s
     ~/.core/screens
+
+super + ctrl + m
+    ~/.core/headset
 #
 # bspwm hotkeys
 #

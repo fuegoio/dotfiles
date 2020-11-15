@@ -24,7 +24,7 @@
        id="selected_fg_color"
        osb:paint="solid">
       <stop
-         style="stop-color:#ffffffgit;stop-opacity:1;"
+         style="stop-color:#ffffffgitgitgit;stop-opacity:1;"
          offset="0"
          id="stop4172" />
     </linearGradient>
@@ -32,7 +32,7 @@
        id="selected_bg_color"
        osb:paint="solid">
       <stop
-         style="stop-color:#92B3EA;stop-opacity:1;"
+         style="stop-color:#8585f5;stop-opacity:1;"
          offset="0"
          id="stop4169" />
     </linearGradient>

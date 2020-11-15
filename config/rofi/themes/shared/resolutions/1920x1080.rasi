@@ -1,8 +1,8 @@
 * {
   /* General */
   text-font:                            "Lato Semi-Bold 11";
-  text-font-mono:                       "FiraCode Nerd Font Regular 14";
-  icon-font:                            "FiraCode Nerd Font Mono 50";
+  text-font-mono:                       "FiraCode Nerd Font Mono 14";
+  icon-font:                            "FiraCode Nerd Font Mono 48";
   icon-font-small:                      "FiraCode Nerd Font Mono 24";
   inputbar-margin:                      4px 4px;
   prompt-padding:                       16px 20px;
@@ -17,7 +17,7 @@
    * Values bellow are 'no-padding' ones for a size 60 (@icon-font) font, played around using this character: ■
    * We then add add 100 actual padding around the icons.
    *                                    -12px 0px   -19px -96px */
-  option-element-padding:               88px  100px 81px  4px;
+  option-element-padding:               88px  100px 81px  48px;
   option-3-window-padding:              415px 446px;
   option-3-listview-spacing:            140px;
   option-5-window-padding:              415px 183px;

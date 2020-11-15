@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Firark-dark-compact
+Comment=A Material Design theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Firark-dark-compact
+MetacityTheme=Firark-dark-compact
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24
