@@ -12,11 +12,12 @@ alias vpnon="sudo wg-quick up wg0"
 alias vpnoff="sudo wg-quick down wg0"
 alias dvorak="setxkbmap -variant dvorak -layout us"
 alias git-clean="git branch --merged master | grep -v '\* master' | xargs -n 1 git branch -d"
+alias vim="nvim"
 
-set -x EDITOR vim
+set -x EDITOR nvim
+set -x VISUAL nvim
 set -gx ANDROID_HOME $HOME/Android/Sdk
-set -gx npm_config_prefix $HOME/.node_modules
-set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.node_modules/bin $HOME/.core $HOME/.poetry/bin
+set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.core $HOME/.poetry/bin $HOME/.serverless/bin
 
 set red (set_color -o red)
 set blue (set_color -o blue)
@@ -83,3 +84,7 @@ function fish_right_prompt
 
   echo -n -s $cwd $git_not_pushed $git_dirty $git_branch $green ' ' $ctx $normal
 end
+
+# tabtab source for packages
+# uninstall by removing these lines
+[ -f ~/.config/tabtab/__tabtab.fish ]; and . ~/.config/tabtab/__tabtab.fish; or true

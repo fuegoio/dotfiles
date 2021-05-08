@@ -19,30 +19,34 @@ XF86Audio{Play,Pause,Next,Prev}
 
 # terminal emulator
 super + Return
-    termite
+   alacritty
 
 # program launcher
-super + space; {space, p, s}
-    {~/.core/appsmenu,~/.core/powermenu,~/.core/scrotmenu}
-
-ctrl + alt + Escape
-    scrot -s
+super + space
+    ~/.core/appsmenu
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
-super + e ; {e,m,p,c,n,g,k,i}
-	{pcmanfm,spotify,pycharm,chromium,notion-app,gitkraken,keepassxc,insomnia}
+#
+# program shortcuts
+#
+super + e ; {e,m,p,c,g,k,i}
+	{pcmanfm,spotify,pycharm,chromium,gitkraken,keepassxc,insomnia}
 
-super + i 
+super + i
     ~/.core/lock
 
 super + ctrl + s
     ~/.core/screens
 
-super + ctrl + m
-    ~/.core/headset
+super + c
+    flameshot gui
+
+ctrl + .
+    splatmoji copy
+    
 #
 # bspwm hotkeys
 #
@@ -100,12 +104,8 @@ super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
-super + ctrl + space
+super + ctrl + c
 	bspc node -p cancel
-
-# cancel the preselection for the focused desktop
-super + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 #
 # move/resize
@@ -119,6 +119,19 @@ super + alt + {h,j,k,l}
 super + alt + ctrl + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
-# move a floating windowu
+# move a floating window
 super + shift + {a,e,o,u}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# light control
+#
+ctrl + {XF86MonBrightnessUp,XF86MonBrightnessDown}
+    /home/fuego/Projects/Tech/nanoleafs/venv/bin/python /home/fuego/Projects/Tech/nanoleafs/main.py brightness {increase,decrease}
+
+super + alt + ctrl + shift + {period,e}
+    /home/fuego/Projects/Tech/nanoleafs/venv/bin/python /home/fuego/Projects/Tech/nanoleafs/main.py brightness {increase,decrease}
+
+super + alt + ctrl + shift + {p,w}
+    /home/fuego/Projects/Tech/nanoleafs/venv/bin/python /home/fuego/Projects/Tech/nanoleafs/main.py color {primary,white}
+

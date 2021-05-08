@@ -15,16 +15,16 @@
 gtk-color-scheme = "base_color:#2b263a"
 gtk-color-scheme = "text_color:#ffffff"
 # Foreground/background
-gtk-color-scheme = "bg_color:#352f47"
+gtk-color-scheme = "bg_color:#322c42"
 gtk-color-scheme = "fg_color:#ffffff"
 # Selected foreground/background
 gtk-color-scheme = "selected_bg_color:#8585f5"
 gtk-color-scheme = "selected_fg_color:#212121"
 # Titlebar foreground/background
-gtk-color-scheme = "titlebar_bg_color:#39334e"
+gtk-color-scheme = "titlebar_bg_color:#262133"
 gtk-color-scheme = "titlebar_fg_color:#ffffff"
 # Menus
-gtk-color-scheme = "menu_color:#423a59"
+gtk-color-scheme = "menu_color:#373049"
 # Tooltips foreground/background
 gtk-color-scheme = "tooltip_bg_color:#616161"
 gtk-color-scheme = "tooltip_fg_color:#ffffff"

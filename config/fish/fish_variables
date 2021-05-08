@@ -13,6 +13,9 @@ SETUVAR _fish_abbr_go:git\x20checkout
 SETUVAR _fish_abbr_gp:git\x20push
 SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_k:kubectl
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/fuego/\x2econfig/fish/functions/fisher\x2efish\x1e/home/fuego/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/home/fuego/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/home/fuego/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/home/fuego/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/home/fuego/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/home/fuego/\x2econfig/fish/functions/nvm\x2efish\x1e/home/fuego/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/home/fuego/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_comment:red
@@ -41,4 +44,7 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_user_abbreviations:gs\x20git\x20status\x1egcm\x20git\x20commit\x20\x2dm\x1ega\x20git\x20add\x1egp\x20git\x20push\x1egm\x20git\x20merge\x1edk\x20docker\x1edco\x20docker\x2dcompose\x1ego\x20git\x20checkout
-SETUVAR fish_user_paths:/home/fuego/Android/Sdk/tools\x1e/home/fuego/Android/Sdk/platform\x2dtools\x1e/home/fuego/\x2enode_modules/bin\x1e/home/fuego/\x2ecore\x1e/home/fuego/\x2epoetry/bin
+SETUVAR fish_user_paths:/home/fuego/Android/Sdk/tools\x1e/home/fuego/Android/Sdk/platform\x2dtools\x1e/home/fuego/\x2ecore\x1e/home/fuego/\x2epoetry/bin\x1e/home/fuego/\x2eserverless/bin
+SETUVAR nvm_data:/home/fuego/\x2elocal/share/nvm
+SETUVAR nvm_default_version:v14\x2e16\x2e1
+SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist

@@ -1,11 +1,15 @@
 #! /bin/sh
 
+# Storage of the xrandr
+xrandr > $HOME/.core/.cache/xrandr
+
+
 # Intel drivers
 extern="HDMI-1"
 intern="eDP-1"
 
 # NVIDIA drivers
-if xrandr | grep -q "HDMI-1-1"; then
+if cat $HOME/.core/.cache/xrandr | grep -q "HDMI-1-1"; then
     extern="HDMI-1-1"
     intern="eDP-1-1"
 fi
@@ -14,14 +18,18 @@ killall picom;
 
 bspc monitor $intern -n $intern
 
-if xrandr | grep -q "$extern disconnected"; then
+if cat $HOME/.core/.cache/xrandr | grep -q "$extern disconnected"; then
     mons -o
     bspc monitor $intern -o term web code chrome notes design slack other1 music
     bspc monitor $intern -n $intern -d term web code chrome notes design slack other1 music
     bspc monitor $extern -r
     bspc desktop -f term
 else
-    $HOME/.core/dual_screen.sh
+    if xrandr --props | grep "00ffffffffffff0026cd46662e090000"; then
+        $HOME/.core/dual_screen_work.sh
+    else
+        $HOME/.core/dual_screen.sh
+    fi
     bspc monitor $extern -n $extern
     bspc desktop term -m $extern
     bspc desktop web -m $extern

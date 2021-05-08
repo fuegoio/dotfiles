@@ -11,25 +11,24 @@ extern="HDMI-1"
 intern="eDP-1"
 
 # NVIDIA drivers
-if xrandr | grep -q "HDMI-1-1"; then
+if cat $HOME/.core/.cache/xrandr | grep -q "HDMI-1-1"; then
     extern="HDMI-1-1"
     intern="eDP-1-1"
 fi
 
 bspc config -m $intern top_padding 5
 
-if xrandr | grep "$extern connected"; then
-    MONITOR=$extern polybar top &
-    MONITOR=$intern polybar external_top &
-    sleep 2
-    bspc config -m $extern right_padding 5
-    bspc config -m $extern bottom_padding 5
+if cat $HOME/.core/.cache/xrandr | grep "$extern connected"; then
+    MONITOR=$extern polybar primary-dual-big &
+    MONITOR=$intern polybar primary-dual-small &
+    MONITOR=$extern polybar secondary-dual &
 else
-    MONITOR=$intern polybar top &
-    sleep 2
-    bspc config -m $intern right_padding 5
-    bspc config -m $intern bottom_padding 5
+    MONITOR=$intern polybar primary &
+    MONITOR=$intern polybar secondary &
 fi
+
+sleep 2;
+bspc config right_padding 5
 
 echo "Bars launched..."
 
