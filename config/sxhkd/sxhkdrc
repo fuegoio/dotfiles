@@ -1,4 +1,4 @@
-
+#
 # wm independent hotkeys
 #
 
@@ -44,7 +44,7 @@ super + ctrl + s
 super + c
     flameshot gui
 
-ctrl + .
+super + ctrl + c
     splatmoji copy
     
 #
@@ -83,13 +83,13 @@ super + {_,shift + }{h,j,k,l}
 super + {a,u}
 	bspc desktop -f {prev,next}
 
-# focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
- 
-# focus to the given desktop
+# Focus to the usual given desktop
 super + {_,alt + }{g,t,n,s}
-	bspc {desktop -f,node -d} '{term,web,code,chrome}'
+	bspc {desktop -f,node -d} '{1-4}'
+
+# Focus to the given desktop
+super + {1-9,0}
+	bspc desktop -f '{1-9,10}'
 
 #
 # preselect
@@ -111,6 +111,14 @@ super + ctrl + c
 # move/resize
 #
 
+# Send to desktop
+super + alt + {1-9,0}
+    bspc node -d '{1-9,10}' --follow
+
+# Send to monitor
+super + alt + equal
+    bspc node -m last --follow
+
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
@@ -123,15 +131,20 @@ super + alt + ctrl + {h,j,k,l}
 super + shift + {a,e,o,u}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+# Move current window to a pre-selected space
+super + shift + m
+    bspc node -n last.!automatic
+
 #
 # light control
 #
+
 ctrl + {XF86MonBrightnessUp,XF86MonBrightnessDown}
-    /home/fuego/Projects/Tech/nanoleafs/venv/bin/python /home/fuego/Projects/Tech/nanoleafs/main.py brightness {increase,decrease}
+    /home/fuego/Projects/Tech/firark-chromy/venv/bin/python /home/fuego/Projects/Tech/firark-chromy/main.py brightness {increase,decrease}
 
 super + alt + ctrl + shift + {period,e}
-    /home/fuego/Projects/Tech/nanoleafs/venv/bin/python /home/fuego/Projects/Tech/nanoleafs/main.py brightness {increase,decrease}
+    /home/fuego/Projects/Tech/firark-chromy/venv/bin/python /home/fuego/Projects/Tech/firark-chromy/main.py brightness {increase,decrease}
 
 super + alt + ctrl + shift + {p,w}
-    /home/fuego/Projects/Tech/nanoleafs/venv/bin/python /home/fuego/Projects/Tech/nanoleafs/main.py color {primary,white}
+    /home/fuego/Projects/Tech/firark-chromy/venv/bin/python /home/fuego/Projects/Tech/firark-chromy/main.py color {primary,white}
 

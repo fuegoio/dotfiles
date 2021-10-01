@@ -31,4 +31,6 @@ dunst &
 killall redshift &> /dev/null
 redshift &> /dev/null &
 
+/home/fuego/.core/audio/venv/bin/python /home/fuego/.core/audio/pulse-volume-watcher.py | xob &> /dev/null &
+
 $HOME/.core/screens

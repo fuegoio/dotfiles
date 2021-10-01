@@ -20,10 +20,10 @@ bspc monitor $intern -n $intern
 
 if cat $HOME/.core/.cache/xrandr | grep -q "$extern disconnected"; then
     mons -o
-    bspc monitor $intern -o term web code chrome notes design slack other1 music
-    bspc monitor $intern -n $intern -d term web code chrome notes design slack other1 music
+    bspc monitor $intern -o 1 2 3 4 5 6 7 8 9
+    bspc monitor $intern -n $intern -d 1 2 3 4 5 6 7 8 9
     bspc monitor $extern -r
-    bspc desktop -f term
+    bspc desktop -f 1
 else
     if xrandr --props | grep "00ffffffffffff0026cd46662e090000"; then
         $HOME/.core/dual_screen_work.sh
@@ -31,18 +31,17 @@ else
         $HOME/.core/dual_screen.sh
     fi
     bspc monitor $extern -n $extern
-    bspc desktop term -m $extern
-    bspc desktop web -m $extern
-    bspc desktop code -m $extern
-    bspc desktop chrome -m $extern
-    bspc desktop notes -m $extern
-    bspc desktop design -m $extern
-    bspc desktop other1 -m $extern
-    bspc desktop music -m $extern
+    bspc desktop 1 -m $extern
+    bspc desktop 2 -m $extern
+    bspc desktop 3 -m $extern
+    bspc desktop 4 -m $extern
+    bspc desktop 5 -m $extern
+    bspc desktop 6 -m $extern
+    bspc desktop 7 -m $extern
     bspc desktop Desktop -r
-    bspc monitor $extern -d term web code chrome notes design other1 music
-    bspc monitor $intern -d slack other2 other3
-    bspc desktop -f term
+    bspc monitor $extern -d 1 2 3 4 5 6 7
+    bspc monitor $intern -d 8 9 10
+    bspc desktop -f 1
 fi
 
 bspc wm -o

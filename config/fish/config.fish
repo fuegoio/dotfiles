@@ -1,4 +1,4 @@
-abbr -a -U -- dco docker-compose
+abbr -a -U -- dco docker compose
 abbr -a -U -- dk docker
 abbr -a -U -- k kubectl
 abbr -a -U -- ga 'git add'
@@ -17,7 +17,7 @@ alias vim="nvim"
 set -x EDITOR nvim
 set -x VISUAL nvim
 set -gx ANDROID_HOME $HOME/Android/Sdk
-set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.core $HOME/.poetry/bin $HOME/.serverless/bin
+set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.core $HOME/.poetry/bin $HOME/.serverless/bin $HOME/.pulumi/bin
 
 set red (set_color -o red)
 set blue (set_color -o blue)
@@ -41,15 +41,15 @@ function fish_mode_prompt
 end
 
 function _git_branch_name
-  echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
+  echo (command git symbolic-ref HEAD 2>/dev/null | sed -e 's|^refs/heads/||')
 end
 
 function _is_git_dirty
-  echo (command git status -s --ignore-submodules=dirty ^/dev/null)
+  echo (command git status -s --ignore-submodules=dirty 2>/dev/null)
 end
 
 function _is_git_not_pushed
-  echo (command git log origin/master..HEAD ^/dev/null)
+  echo (command git log origin/master..HEAD 2>/dev/null)
 end
 
 set fish_color_command blue
@@ -80,9 +80,7 @@ function fish_right_prompt
     end
   end
 
-  set -l ctx (kubectl config current-context 2>/dev/null)
-
-  echo -n -s $cwd $git_not_pushed $git_dirty $git_branch $green ' ' $ctx $normal
+  echo -n -s $cwd $git_not_pushed $git_dirty $git_branch $green $normal
 end
 
 # tabtab source for packages
