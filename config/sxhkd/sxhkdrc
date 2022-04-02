@@ -23,7 +23,7 @@ super + Return
 
 # program launcher
 super + space
-    ~/.core/appsmenu
+    ~/.config/rofi/bin/launcher
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -32,8 +32,8 @@ super + Escape
 #
 # program shortcuts
 #
-super + e ; {e,m,p,c,g,k,i}
-	{pcmanfm,spotify,pycharm,chromium,gitkraken,keepassxc,insomnia}
+super + e ; {e,p,c,g,k,i}
+	{pcmanfm,pycharm,chromium,gitkraken,keepassxc,insomnia}
 
 super + i
     ~/.core/lock
