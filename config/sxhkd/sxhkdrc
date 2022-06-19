@@ -32,8 +32,8 @@ super + Escape
 #
 # program shortcuts
 #
-super + e ; {e,p,c,g,k,i}
-	{pcmanfm,pycharm,chromium,gitkraken,keepassxc,insomnia}
+super + e ; {e,p,c,g,k}
+	{nautilus,pycharm,google-chrome-stable,gitkraken,keepassxc}
 
 super + i
     ~/.core/lock
@@ -112,7 +112,7 @@ super + ctrl + c
 #
 
 # Send to desktop
-super + alt + {1-9,0}
+super + shift + {1-9,0}
     bspc node -d '{1-9,10}' --follow
 
 # Send to monitor

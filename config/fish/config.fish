@@ -4,7 +4,8 @@ abbr -a -U -- k kubectl
 abbr -a -U -- ga 'git add'
 abbr -a -U -- gcm 'git commit -m'
 abbr -a -U -- gm 'git merge'
-abbr -a -U -- go 'git checkout'
+abbr -a -U -- gc 'git checkout'
+abbr -a -U -- gcb 'git checkout -b'
 abbr -a -U -- gp 'git push'
 abbr -a -U -- gs 'git status'
 
@@ -16,8 +17,7 @@ alias vim="nvim"
 
 set -x EDITOR nvim
 set -x VISUAL nvim
-set -gx ANDROID_HOME $HOME/Android/Sdk
-set -U fish_user_paths $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.core $HOME/.poetry/bin $HOME/.serverless/bin $HOME/.pulumi/bin
+set -g fish_user_paths $HOME/.core
 
 set red (set_color -o red)
 set blue (set_color -o blue)
@@ -27,7 +27,7 @@ set yellow (set_color -o yellow)
 set pink (set_color -o white)
 set normal (set_color normal)
 
-set -U fish_greeting "$blue $normal Welcome to Argo. Go faire du sale."
+set -U fish_greeting "$blue $normal Welcome to Andromeda. Go faire du sale."
 
 fish_vi_key_bindings insert
 function fish_user_key_bindings
@@ -56,7 +56,7 @@ set fish_color_command blue
 
 function fish_prompt
   set -l last_status $status
-  set -l host $blue(hostname)
+  set -l host $blue andromeda
   set -l arrow ""
 
   # Notify if a command took more than 10 sec
@@ -86,3 +86,5 @@ end
 # tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/__tabtab.fish ]; and . ~/.config/tabtab/__tabtab.fish; or true
+
+source /opt/asdf-vm/asdf.fish
