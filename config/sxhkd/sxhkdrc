@@ -1,25 +1,10 @@
 #
-# wm independent hotkeys
+# base
 #
-
-XF86MonBrightnessUp
-    light -A 5
-
-XF86MonBrightnessDown
-    light -U 5
-
-XF86AudioMute
-    amixer set Master toggle
-
-XF86Audio{Raise,Lower}Volume
-    amixer set Master {5%+,5%-} unmute
-
-XF86Audio{Play,Pause,Next,Prev}
-    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Stop,Next,Previous}
 
 # terminal emulator
 super + Return
-   alacritty
+    alacritty
 
 # program launcher
 super + space
@@ -27,13 +12,14 @@ super + space
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+    pkill -USR1 -x sxhkd
 
 #
 # program shortcuts
 #
-super + e ; {e,p,c,g,k}
-	{nautilus,pycharm,google-chrome-stable,gitkraken,keepassxc}
+#
+super + e ; {e,p,c,g,k,s}
+    {pcmanfm,pycharm,google-chrome-stable,gitkraken,keepassxc,flameshot gui}
 
 super + i
     ~/.core/lock
@@ -41,10 +27,7 @@ super + i
 super + ctrl + s
     ~/.core/screens
 
-super + c
-    flameshot gui
-
-super + ctrl + c
+super + shift + space
     splatmoji copy
     
 #
@@ -53,23 +36,23 @@ super + ctrl + c
 
 # quit bspwm normally
 super + alt + Escape
-	bspc quit
+    bspc quit
 
 # close and kill
 super + {_,shift + }w
-	bspc node -{c,k}
+    bspc node -{c,k}
 
 #
 # state/flags
 #
 
 # set the window state
-super + {y,p,shift + f,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + {y,shift + f,f}
+    bspc node -t {tiled,floating,fullscreen}
 
 # set the node flags
 super + ctrl + {a,o,e}
-	bspc node -g {locked,sticky,private}
+    bspc node -g {locked,sticky,private}
 
 #
 # focus/swap
@@ -77,19 +60,11 @@ super + ctrl + {a,o,e}
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
-	bspc node -{f,s} {west,south,north,east}
-
-# focus the next/previous desktop
-super + {a,u}
-	bspc desktop -f {prev,next}
-
-# Focus to the usual given desktop
-super + {_,alt + }{g,t,n,s}
-	bspc {desktop -f,node -d} '{1-4}'
+    bspc node -{f,s} {west,south,north,east}
 
 # Focus to the given desktop
 super + {1-9,0}
-	bspc desktop -f '{1-9,10}'
+    bspc desktop -f '{1-9,10}'
 
 #
 # preselect
@@ -97,15 +72,19 @@ super + {1-9,0}
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+    bspc node -p {west,south,north,east}
 
 # preselect the ratio
 super + ctrl + {1-9}
-	bspc node -o 0.{1-9}
+    bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
 super + ctrl + c
-	bspc node -p cancel
+    bspc node -p cancel
+
+# Move current window to a pre-selected space
+super + shift + m
+    bspc node -n last.!automatic
 
 #
 # move/resize
@@ -114,10 +93,6 @@ super + ctrl + c
 # Send to desktop
 super + shift + {1-9,0}
     bspc node -d '{1-9,10}' --follow
-
-# Send to monitor
-super + alt + equal
-    bspc node -m last --follow
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
@@ -131,20 +106,35 @@ super + alt + ctrl + {h,j,k,l}
 super + shift + {a,e,o,u}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# Move current window to a pre-selected space
-super + shift + m
-    bspc node -n last.!automatic
+#
+# wm independent hotkeys
+#
+
+XF86MonBrightnessUp
+    light -A 10
+
+XF86MonBrightnessDown
+    light -U 10
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86Audio{Raise,Lower}Volume
+    pactl set-sink-volume @DEFAULT_SINK@ {+5%,-5%}
+
+XF86Audio{Play,Next,Prev}
+    playerctl {play-pause,next,previous}
 
 #
 # light control
 #
 
 ctrl + {XF86MonBrightnessUp,XF86MonBrightnessDown}
-    /home/fuego/Projects/Tech/firark-chromy/venv/bin/python /home/fuego/Projects/Tech/firark-chromy/main.py brightness {increase,decrease}
+    /home/fuego/Projects/Tech/firark-chromy/chromy brightness {increase,decrease}
 
 super + alt + ctrl + shift + {period,e}
-    /home/fuego/Projects/Tech/firark-chromy/venv/bin/python /home/fuego/Projects/Tech/firark-chromy/main.py brightness {increase,decrease}
+    /home/fuego/Projects/Tech/firark-chromy/chromy brightness {increase,decrease}
 
 super + alt + ctrl + shift + {p,w}
-    /home/fuego/Projects/Tech/firark-chromy/venv/bin/python /home/fuego/Projects/Tech/firark-chromy/main.py color {primary,white}
+    /home/fuego/Projects/Tech/firark-chromy/chromy color {primary,white}
 

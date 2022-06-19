@@ -4,16 +4,16 @@
 #
 # Yes, this is stolen from gk.
 
-outer='0x1e1d2f'   # outer
-inner1='0x8585f5'  # focused
-inner2='0x2b263a'  # normal
+outer='0x1E1E2E'   # outer
+inner1='0xB4BEFE'  # focused
+inner2='0x181825'  # normal
 
 trap 'bspc config border_width 0; kill -9 -$$' INT TERM
 
 targets() {
     case $1 in
-        focused) bspc query -N -n .local.focused.\!fullscreen;;
-        normal)  bspc query -N -n .local.\!focused.\!fullscreen
+        focused) bspc query -N -n .focused.\!fullscreen;;
+        normal)  bspc query -N -n .\!focused.\!fullscreen
     esac | grep -iv "$v"
 }
 

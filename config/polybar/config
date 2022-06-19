@@ -12,7 +12,7 @@ monitor-strict = false
 radius-top = 7.0
 radius-bottom = 7.0
 
-background = #2b263a
+background = #1e1e2e
 foreground = #ffffff
 
 module-margin-left = 3
@@ -24,14 +24,14 @@ border-bottom-size = 0
 
 wm-restack = bspwm
 
-font-0 = Inter:medium:size=8;2
+font-0 = Lato:medium:size=8;2
 font-1 = FiraCodeNerdFont:size=10;2
 font-2 = FiraCodeNerdFont:bold:size=10;2
 font-3 = unifont:fontformat=truetype:size=12:antialias=true;2
 
 [bar/primary]
 inherit = bar/main
-width = 20.2%
+width = 20.8%
 height = 30
 
 offset-x = 25
@@ -40,11 +40,11 @@ modules-left = bspwm
 
 [bar/primary-dual-big]
 inherit = bar/primary
-width = 12.9%
+width = 10.4%
 
 [bar/primary-dual-small]
 inherit = bar/primary
-width = 7.4%
+width = 9.4%
 
 [bar/secondary]
 inherit = bar/main
@@ -68,31 +68,8 @@ modules-right = mouse wireless-network volume battery date
 
 [bar/secondary-dual]
 inherit = bar/secondary
-width = 38%
-offset-x = 62%:-25
-
-[bar/music]
-inherit = bar/main
-
-module-margin-left = 0
-
-background = #8585f5
-foreground = #2b263a
-
-width = 12%
-height = 30
-
-offset-x = 22%
-offset-y = 20
-
-padding = 6
-
-modules-left = spotify
-
-[bar/music-dual]
-inherit = bar/music
-width = 8%
-offset-x = 14.4%
+width = 28%
+offset-x = 72%:-25
 
 [module/backlight]
 type = internal/backlight
@@ -104,9 +81,9 @@ label = %{F#ff8faa} %{F-}    %percentage%%
 [module/battery]
 type = internal/battery
 
-format-charging = <animation-charging>   <label-charging>
-format-discharging = <ramp-capacity>   <label-discharging>
-format-full = <ramp-capacity>   <label-full>
+format-charging = <animation-charging>    <label-charging>
+format-discharging = <ramp-capacity>    <label-discharging>
+format-full = <ramp-capacity>    <label-full>
 
 ramp-capacity-0 =  
 ramp-capacity-0-foreground = #ff8e91
@@ -160,10 +137,10 @@ label = "%{F#8585f5} %{F-}   %date%      "
 
 [module/wireless-network]
 type = internal/network
-interface = wlp2s0 
+interface = wlan0
 interval = 3.0
 
-format-connected = "<ramp-signal>   <label-connected>"
+format-connected = "<ramp-signal>    <label-connected>"
 
 label-connected = %essid% (%upspeed% . %downspeed%)
 label-disconnected = %{F#ff8e91}睊%{F-}   %{F#63ffffff}Not connected%{F-}
