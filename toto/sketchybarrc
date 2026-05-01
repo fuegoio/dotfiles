@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+source "$HOME/.config/sketchybar/variables.sh"
+
+# General bar and defaults
+sketchybar --bar height=30 \
+	color="$TRANSPARENT" \
+	shadow=off \
+	position=top \
+	sticky=on \
+	padding_right=16 \
+	padding_left=20 \
+	corner_radius="$CORNER_RADIUS" \
+	y_offset=12 \
+	margin=10 \
+	blur_radius=0 \
+	--default updates=when_shown \
+	icon.font="$FONT:SemiBold:12.5" \
+	icon.padding_left=12 \
+	icon.padding_right=4 \
+	label.font="$FONT:SemiBold:12.0" \
+	label.color="$LABEL_COLOR" \
+	label.padding_left=4 \
+	label.padding_right=12 \
+	background.padding_right=5 \
+	background.padding_left=5 \
+	background.height="$HEIGHT" \
+	background.color="$BAR_COLOR" \
+	background.corner_radius="$CORNER_RADIUS" \
+  background.border_width=0
+
+# Left: spaces and front app
+source "$ITEM_DIR/spaces.sh"
+source "$ITEM_DIR/front_app.sh"
+
+# Right: music, datetime, battery, volume, cpu
+source "$ITEM_DIR/datetime.sh"
+source "$ITEM_DIR/battery.sh"
+source "$ITEM_DIR/volume.sh"
+source "$ITEM_DIR/cpu.sh"
+source "$ITEM_DIR/music.sh"
+
+#################### Finalizing Setup ####################
+
+sketchybar --hotload true
+sketchybar --update
+
+echo "sketchybar configuration loaded.."

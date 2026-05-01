@@ -1,0 +1,43 @@
+#!/usr/bin/env sh
+
+# Color Palette - Catppuccin Latte
+ROSEWATER=0xfff2d5cf
+FLAMINGO=0xffeebebe
+PINK=0xfff4b8e4
+MAUVE=0xffca9ee6
+RED=0xffe78284
+MAROON=0xffea999c
+PEACH=0xffef9f76
+YELLOW=0xffe5c890
+GREEN=0xffa6d189
+TEAL=0xff81c8be
+SKY=0xff99d1db
+SAPHIRE=0xff85c1dc
+BLUE=0xff8caaee
+LAVENDER=0xffbabbf1
+TEXT=0xffc6d0f5
+SUBTEXT1=0xffb5bfe2
+SUBTEXT0=0xffa5adce
+OVERLAY2=0xff949cbb
+OVERLAY1=0xff838ba7
+OVERLAY0=0xff737994
+SURFACE2=0xff626880
+SURFACE1=0xff51576d
+SURFACE0=0xff414559
+BASE=0xff303446
+MANTLE=0xff292c3c
+CRUST=0xff232634
+
+TRANSPARENT=0x00000000
+
+# General bar colors
+BAR_COLOR=$MANTLE
+LABEL_COLOR=$SUBTEXT0
+
+ITEM_DIR="$HOME/.config/sketchybar/items"
+PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
+
+FONT="FiraCode Nerd Font"
+
+CORNER_RADIUS=6
+HEIGHT=30
