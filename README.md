@@ -2,7 +2,8 @@
 
 My MacOS UI setup.
 
-![screen](./screenshot.png)
+![clean](./screenshot-clean.png)
+![nvim](./screenshot.png)
 
 - `yabai`
 - `skhd`
