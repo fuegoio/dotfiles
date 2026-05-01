@@ -1,0 +1,38 @@
+auto-update-channel = tip
+
+theme = catppuccin frappe
+window-padding-x = 24
+window-padding-y = 24
+window-save-state = never
+macos-titlebar-style = hidden
+
+font-size = 11.5
+font-family = "FiraCode Nerd Font Mono"
+font-thicken = true
+
+quit-after-last-window-closed=true
+
+keybind = clear
+
+# Config
+keybind = super+shift+comma=reload_config
+
+# Clipboard
+keybind = performable:super+c=copy_to_clipboard
+keybind = performable:super+v=paste_from_clipboard
+
+# Split
+keybind = alt+v=new_split:right
+keybind = alt+s=new_split:down
+keybind = alt+w=close_surface
+keybind = alt+equal=equalize_splits
+
+# Navigation
+keybind = alt+l=goto_split:right
+keybind = alt+h=goto_split:left
+keybind = alt+i=goto_split:up
+keybind = alt+j=goto_split:down
+
+# Focus
+keybind = alt+space=toggle_split_zoom
+

@@ -1,5 +1,1 @@
-config/fish/fishd.*
-config/fish/fish_history
-config/fish/fish_variables
-
-.cache/
+.DS_Store
